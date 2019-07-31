@@ -1,0 +1,71 @@
+@import "fonts";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+@import "header-geral.scss";
+
+.listagem {
+  margin-top: 30px;
+  padding: 0px 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  a.categoria {
+    border-radius: 4px;
+    width: 100%;
+
+    .imagem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        border-radius: 4px;
+        width: 100%;
+      }
+    }
+
+    .legenda {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      
+      .nome {
+        line-height: 1.4;
+        margin-top: 4px;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+  }
+}
