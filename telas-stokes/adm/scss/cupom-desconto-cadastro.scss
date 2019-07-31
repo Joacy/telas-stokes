@@ -1,0 +1,162 @@
+@import "fonts";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+  padding-bottom: 56px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+@import 'header-geral.scss';
+
+form {
+  margin: 0px 18px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  .form-field {
+    margin-bottom: 10px;
+
+    label {
+      color: #000000;
+      font-size: 14px;
+    }
+
+    input[type="text"] {
+      padding: 0px 5px;
+      background: #ffffff;
+      border: 1px solid #dfdfe1;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #000000;
+      font-size: 16px;
+      font-family: "Proxima Nova";
+    }
+  }
+
+  .linha-desconto {
+    display: flex;
+    width: 100%;
+
+    .form-field {
+      margin-bottom: 10px;
+      width: 100%;
+
+      label {
+        color: #000000;
+        font-size: 14px;
+      }
+
+      input[type="text"] {
+        padding: 0px 5px;
+        background: #ffffff;
+        border: 1px solid #dfdfe1;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Proxima Nova";
+      }
+    }
+
+    .linha-radio {
+      display: flex;
+      align-items: flex-end;
+
+      label {
+        margin-bottom: 18px;
+
+        input[type="radio"] + span {
+          width: 50px;
+          height: 42px;
+          margin: 0;
+          padding: 10px;
+        }
+
+        input[type="radio"] + span:after,
+        input[type="radio"] + span:before {
+          display: none;
+        }
+
+        input[for="porcentagem"] + span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #d7d7d7;
+          color: #545460;
+          font-size: 20px;
+          padding: 10px;
+          margin: 0;
+        }
+
+        input[for="porcentagem"]:checked + span {
+          background: #8cb543;
+          color: #ffffff;
+        }
+
+        input[for="real"] + span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #d7d7d7;
+          color: #5d5d69;
+          font-size: 20px;
+          padding: 10px;
+          margin: 0;
+        }
+        input[for="real"]:checked + span {
+          background: #8cb543;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.botao-cadastrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  padding-top: 0;
+  z-index: 999;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8cb543;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+  }
+}

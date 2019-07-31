@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stokes - Use.Voga</title>
+
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/pagamento.css">
+
+</head>
+
+<body>
+
+    <header class="navbar-fixed">
+        <nav>
+            <a href="javascript:(history.back())">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400.004px" height="400.004px"
+                    viewBox="0 0 400.004 400.004" style="enable-background:new 0 0 400.004 400.004;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757
+                                            c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072
+                                            c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315
+                                            C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </svg>
+            </a>
+            <p class="brand-logo">Pagamento</p>
+            <a class="brand-logo right" href="index.html">
+                <div class="logo">
+                    <img src="imagens/logo-medio.jpg">
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <form>
+        <div class="forma-pagamento">
+            <label>
+                <input type="radio" name="cartao-boleto" checked>
+                <span class="cartao">Cartão de Crédito</span>
+            </label>
+            <label>
+                <input type="radio" name="cartao-boleto">
+                <span>Boleto</span>
+            </label>
+        </div>
+
+        <div class="input-field">
+            <input type="text" id="numero-cartao" name="numero-cartao">
+            <label for="numero-cartao">Número do Cartão</label>
+            <img src="imagens/visa.png">
+        </div>
+
+        <div class="input-field">
+            <input type="text" id="nome-cartao" name="nome-cartao">
+            <label for="nome-cartao">Nome impresso no cartão</label>
+        </div>
+
+        <div class="metade">
+
+            <div class="form-field">
+                <label>Mês</label>
+                <select>
+                    <option value="jan">JAN</option>
+                    <option value="fev">FEV</option>
+                    <option value="mar">MARÇO</option>
+                    <option value="abr">ABRIL</option>
+                    <option value="mai">MAIO</option>
+                    <option value="jun">JUNHO</option>
+                    <option value="jul">JUL</option>
+                    <option value="ago">AGO</option>
+                    <option value="set">SET</option>
+                    <option value="out">OUT</option>
+                    <option value="nov">NOV</option>
+                    <option value="dez">DEZ</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label>Ano</label>
+                <select>
+                    <option value="ano1">2017</option>
+                    <option value="ano2">2018</option>
+                    <option value="ano3">2019</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="codigo-seguranca" name="codigo-seguranca">
+                <label for="codigo-seguranca">Cód. Segurança</label>
+            </div>
+
+            <div class="form-field">
+                <label>Parcelas</label>
+                <select>
+                    <option value="uma">1 x R$150,00</option>
+                    <option value="duas">2 x R$75,00</option>
+                    <option value="tres">3 x R$50,00</option>
+                </select>
+            </div>
+
+        </div>
+    </form>
+
+    <footer>
+        <a href="pagamento-recorrente.html">CONTINUAR <i class="material-icons">arrow_forward_alt</i></a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+header.navbar-fixed {
+  width: 100%;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    height: 56px;
+    width: 100%;
+    padding: 0px 18px;
+    box-shadow: none;
+
+    a {
+      display: flex;
+      margin: 0;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        color: #000000;
+      }
+    }
+
+    p.brand-logo {
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    a.brand-logo {
+      display: flex;
+      margin: 0;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .brand-logo.right {
+      right: 18px;
+    }
+  }
+}

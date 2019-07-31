@@ -1,0 +1,202 @@
+@import "fonts";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(to right, #2dbdf2, #a209bb);
+  height: 56px;
+  width: 100%;
+
+  a.sidenav-trigger {
+    display: flex;
+
+    i.material-icons {
+      font-weight: 900;
+      margin: 0px 18px;
+      color: #000000;
+    }
+  }
+
+  ul.sidenav {
+    display: flex;
+    flex-direction: column;
+
+    .titulo {
+      display: flex;
+      align-items: center;
+      padding: 0px 18px;
+      height: 56px;
+      a {
+        p {
+          font-size: 16px;
+          color: #000000;
+          font-weight: 600;
+        }
+      }
+    }
+    li {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        margin: 0px;
+        padding: 0px 18px;
+
+        p {
+          font-size: 16px;
+          color: #000000;
+        }
+
+        i.material-icons {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px;
+          color: #dfdfe1;
+        }
+      }
+    }
+    li:hover {
+      a {
+        i.material-icons {
+          color: #000000;
+        }
+      }
+    }
+    li:last-child {
+      margin-bottom: 50px;
+    }
+    .meio {
+      a {
+        display: flex;
+        padding: 10px 18px;
+        margin-bottom: 5px;
+        background: #f9f9f9;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      a.visualizar {
+        color: #5c75dc;
+      }
+
+      a.sair {
+        color: #ca1f27;
+      }
+    }
+  }
+}
+
+.navlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 86px;
+  width: 100%;
+  background: transparent;
+
+  .caixa-logo {
+    margin: -45px auto 30px;
+    background: #ffffff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.bem-vindo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 42px;
+  margin-bottom: 15px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
+
+.produtos-habilitar {
+  padding: 0px 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+
+  .produto {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0;
+      padding: 0;
+      width: 70px;
+      height: 70px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+.meus-produtos {
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-size: 16px;
+    color: #5c75dc;
+  }
+}

@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Proxima Nova Regular"), url(../proxima-nova/ProximaNova-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Proxima Nova Thin"), url(../proxima-nova/ProximaNovaT-Thin.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Proxima Nova Light"), url(../proxima-nova/ProximaNova-Light.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Proxima Nova Semibold"), url(../proxima-nova/ProximaNova-Semibold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Proxima Nova Bold"), url(../proxima-nova/ProximaNova-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Proxima Nova Extrabold"), url(../proxima-nova/ProximaNova-Extrabld.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Proxima Nova Black"), url(../proxima-nova/ProximaNova-Black.woff) format("woff"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova"; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+header.navbar-fixed {
+  width: 100%; }
+  header.navbar-fixed nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #ffffff;
+    height: 56px;
+    width: 100%;
+    padding: 0px 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    header.navbar-fixed nav a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a svg {
+        width: 24px;
+        height: 24px;
+        color: #000000; }
+    header.navbar-fixed nav p.brand-logo {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      color: #000000; }
+    header.navbar-fixed nav a.brand-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a.brand-logo .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+        header.navbar-fixed nav a.brand-logo .logo img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%; }
+    header.navbar-fixed nav .brand-logo.right {
+      right: 18px; }
+
+.formulario {
+  margin: 0px 18px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .formulario form {
+    margin-bottom: 10px;
+    width: 100%; }
+    .formulario form .form-field {
+      position: relative; }
+      .formulario form .form-field input[type="text"] {
+        background: #ffffff;
+        padding: 0px 5px;
+        border: 1px solid #dfdfe1;
+        border-radius: 3px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Proxima Nova"; }
+      .formulario form .form-field ::-webkit-input-placeholder {
+        color: #000000; }
+      .formulario form .form-field :-ms-input-placeholder {
+        color: #000000; }
+      .formulario form .form-field ::-ms-input-placeholder {
+        color: #000000; }
+      .formulario form .form-field ::placeholder {
+        color: #000000; }
+      .formulario form .form-field a {
+        position: absolute;
+        bottom: 7px;
+        right: 5px;
+        cursor: pointer; }
+        .formulario form .form-field a i.material-icons {
+          color: #000000;
+          font-size: 30px; }
+      .formulario form .form-field select {
+        display: block;
+        background: #ffffff;
+        border: 1px solid #dfdfe1;
+        border-radius: 3px;
+        padding: 0px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Proxima Nova";
+        margin-bottom: 8px; }
+        .formulario form .form-field select option {
+          color: #000000;
+          background: #ffffff; }
+
+.listagem {
+  margin: 0px 18px;
+  margin-bottom: 15px; }
+  .listagem .venda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dfdfe1; }
+    .listagem .venda .informacoes {
+      margin-right: 10px; }
+      .listagem .venda .informacoes .numero-cliente {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 10px; }
+        .listagem .venda .informacoes .numero-cliente p.numero-pedido {
+          padding: 1px 10px;
+          border-radius: 3px;
+          background: #000000;
+          color: #ffffff;
+          font-size: 16px;
+          line-height: normal;
+          margin-right: 7px; }
+        .listagem .venda .informacoes .numero-cliente p.numero-pedido.novo {
+          background: #5a72dc; }
+        .listagem .venda .informacoes .numero-cliente p.numero-pedido.andamento {
+          background: #d96d00; }
+        .listagem .venda .informacoes .numero-cliente p.numero-pedido.cancelado {
+          background: #d80100; }
+        .listagem .venda .informacoes .numero-cliente p.numero-pedido.entregue {
+          background: #888888; }
+        .listagem .venda .informacoes .numero-cliente p.nome-cliente {
+          color: #000000;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: normal; }
+      .listagem .venda .informacoes p.data-valor {
+        color: #545460;
+        font-size: 16px;
+        line-height: normal; }
+      .listagem .venda .informacoes p.modo-entrega {
+        color: #545460;
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .listagem .venda .informacoes p.pagamento {
+        color: #545460;
+        font-size: 14px;
+        line-height: normal; }
+      .listagem .venda .informacoes p.pagamento.entrega {
+        color: #d96d00; }
+      .listagem .venda .informacoes p.pagamento.aguardando {
+        color: #d80100; }
+      .listagem .venda .informacoes p.pagamento.confirmado {
+        color: #8db543; }
+    .listagem .venda .icone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .listagem .venda .icone svg {
+        width: 30px;
+        height: 30px;
+        fill: #8db543; }
+  .listagem .venda:first-child {
+    padding-top: 0px; }
+  .listagem .venda:last-child {
+    border-bottom: none; }

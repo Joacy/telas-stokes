@@ -1,0 +1,97 @@
+@import "fonts";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+  padding-bottom: 74px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+@import 'header-geral.scss';
+
+.cupons {
+  margin: 0px 18px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  .cupom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dfdfe1;
+
+    .informacoes {
+      margin-right: 10px;
+
+      h5 {
+        color: #000000;
+        font-size: 20px;
+      }
+      p {
+        color: #545460;
+        font-size: 18px;
+      }
+    }
+    .icones {
+      display: flex;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: #8db543;
+      }
+
+      svg.busca {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .cupom:first-child {
+    padding-top: 0px;
+  }
+
+  .cupom:last-child {
+    border-bottom: none;
+  }
+}
+
+.adicionar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 74px;
+  width: 100%;
+  position: fixed;
+  margin-right: 18px;
+  right: 0;
+  margin-bottom: 10px;
+  bottom: 0;
+  box-sizing: border-box;
+
+  a.btn-floating.btn-large {
+    background: #8db543;
+  }
+}

@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Proxima Nova Regular"), url(../proxima-nova/ProximaNova-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Proxima Nova Thin"), url(../proxima-nova/ProximaNovaT-Thin.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Proxima Nova Light"), url(../proxima-nova/ProximaNova-Light.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Proxima Nova Semibold"), url(../proxima-nova/ProximaNova-Semibold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Proxima Nova Bold"), url(../proxima-nova/ProximaNova-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Proxima Nova Extrabold"), url(../proxima-nova/ProximaNova-Extrabld.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Proxima Nova Black"), url(../proxima-nova/ProximaNova-Black.woff) format("woff"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+  padding-bottom: 74px; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+header.navbar-fixed {
+  width: 100%; }
+  header.navbar-fixed nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #ffffff;
+    height: 56px;
+    width: 100%;
+    padding: 0px 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    header.navbar-fixed nav a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a svg {
+        width: 24px;
+        height: 24px;
+        color: #000000; }
+    header.navbar-fixed nav p.brand-logo {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      color: #000000; }
+    header.navbar-fixed nav a.brand-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a.brand-logo .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+        header.navbar-fixed nav a.brand-logo .logo img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%; }
+    header.navbar-fixed nav .brand-logo.right {
+      right: 18px; }
+
+.abas {
+  margin: 0px 18px; }
+  .abas ul#tabs-swipe-demo.tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 210px; }
+    .abas ul#tabs-swipe-demo.tabs li.tab {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left;
+      border-bottom: 0;
+      padding: 0;
+      margin: 0; }
+      .abas ul#tabs-swipe-demo.tabs li.tab a {
+        color: #000000;
+        font-size: 16px;
+        text-transform: initial;
+        background: transparent;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        border-bottom: 3px solid #e5e5e5; }
+      .abas ul#tabs-swipe-demo.tabs li.tab a.active {
+        background: transparent;
+        border-bottom: 3px solid #ca1f25; }
+    .abas ul#tabs-swipe-demo.tabs li.indicator {
+      background: transparent;
+      border-bottom: 0; }
+  .abas div#novos form,
+  .abas div#ativos form,
+  .abas div#ocultos form {
+    margin-bottom: 10px; }
+    .abas div#novos form .form-field,
+    .abas div#ativos form .form-field,
+    .abas div#ocultos form .form-field {
+      position: relative; }
+      .abas div#novos form .form-field input[type="text"],
+      .abas div#ativos form .form-field input[type="text"],
+      .abas div#ocultos form .form-field input[type="text"] {
+        background: #ffffff;
+        padding: 0px 5px;
+        border: 1px solid #dfdfe1;
+        border-radius: 3px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Proxima Nova"; }
+      .abas div#novos form .form-field ::-webkit-input-placeholder,
+      .abas div#ativos form .form-field ::-webkit-input-placeholder,
+      .abas div#ocultos form .form-field ::-webkit-input-placeholder {
+        color: #000000; }
+      .abas div#novos form .form-field :-ms-input-placeholder,
+      .abas div#ativos form .form-field :-ms-input-placeholder,
+      .abas div#ocultos form .form-field :-ms-input-placeholder {
+        color: #000000; }
+      .abas div#novos form .form-field ::-ms-input-placeholder,
+      .abas div#ativos form .form-field ::-ms-input-placeholder,
+      .abas div#ocultos form .form-field ::-ms-input-placeholder {
+        color: #000000; }
+      .abas div#novos form .form-field ::placeholder,
+      .abas div#ativos form .form-field ::placeholder,
+      .abas div#ocultos form .form-field ::placeholder {
+        color: #000000; }
+      .abas div#novos form .form-field a,
+      .abas div#ativos form .form-field a,
+      .abas div#ocultos form .form-field a {
+        position: absolute;
+        bottom: 7px;
+        right: 5px;
+        cursor: pointer; }
+        .abas div#novos form .form-field a i.material-icons,
+        .abas div#ativos form .form-field a i.material-icons,
+        .abas div#ocultos form .form-field a i.material-icons {
+          color: #000000;
+          font-size: 30px; }
+      .abas div#novos form .form-field select,
+      .abas div#ativos form .form-field select,
+      .abas div#ocultos form .form-field select {
+        display: block;
+        background: #ffffff;
+        border: 1px solid #dfdfe1;
+        border-radius: 3px;
+        padding: 0px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Proxima Nova"; }
+        .abas div#novos form .form-field select option,
+        .abas div#ativos form .form-field select option,
+        .abas div#ocultos form .form-field select option {
+          color: #000000;
+          background: #ffffff; }
+  .abas div#novos .produtos,
+  .abas div#ativos .produtos,
+  .abas div#ocultos .produtos {
+    width: 100%; }
+    .abas div#novos .produtos .produto,
+    .abas div#ativos .produtos .produto,
+    .abas div#ocultos .produtos .produto {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px 0px;
+      border-top: 1px solid #dfdfe1; }
+      .abas div#novos .produtos .produto .informacoes,
+      .abas div#ativos .produtos .produto .informacoes,
+      .abas div#ocultos .produtos .produto .informacoes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .abas div#novos .produtos .produto .informacoes .foto,
+        .abas div#ativos .produtos .produto .informacoes .foto,
+        .abas div#ocultos .produtos .produto .informacoes .foto {
+          padding: 0px;
+          margin-right: 15px;
+          width: 70px;
+          height: 70px; }
+          .abas div#novos .produtos .produto .informacoes .foto img,
+          .abas div#ativos .produtos .produto .informacoes .foto img,
+          .abas div#ocultos .produtos .produto .informacoes .foto img {
+            width: 100%;
+            height: auto;
+            border-radius: 7px; }
+        .abas div#novos .produtos .produto .informacoes .descricao,
+        .abas div#ativos .produtos .produto .informacoes .descricao,
+        .abas div#ocultos .produtos .produto .informacoes .descricao {
+          margin-top: 3px; }
+          .abas div#novos .produtos .produto .informacoes .descricao h4,
+          .abas div#ativos .produtos .produto .informacoes .descricao h4,
+          .abas div#ocultos .produtos .produto .informacoes .descricao h4 {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 7px; }
+          .abas div#novos .produtos .produto .informacoes .descricao h5,
+          .abas div#ativos .produtos .produto .informacoes .descricao h5,
+          .abas div#ocultos .produtos .produto .informacoes .descricao h5 {
+            font-size: 14px;
+            color: #5d5d69;
+            margin-bottom: 3px; }
+          .abas div#novos .produtos .produto .informacoes .descricao p,
+          .abas div#ativos .produtos .produto .informacoes .descricao p,
+          .abas div#ocultos .produtos .produto .informacoes .descricao p {
+            font-size: 12px;
+            color: #5d5d69; }
+      .abas div#novos .produtos .produto .editar,
+      .abas div#ativos .produtos .produto .editar,
+      .abas div#ocultos .produtos .produto .editar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        .abas div#novos .produtos .produto .editar svg,
+        .abas div#ativos .produtos .produto .editar svg,
+        .abas div#ocultos .produtos .produto .editar svg {
+          fill: #8db543;
+          height: 24px;
+          width: 24px; }
+    .abas div#novos .produtos div.produto:first-child,
+    .abas div#ativos .produtos div.produto:first-child,
+    .abas div#ocultos .produtos div.produto:first-child {
+      border: none; }
+  .abas div#novos .adicionar,
+  .abas div#ativos .adicionar,
+  .abas div#ocultos .adicionar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 74px;
+    width: 100%;
+    position: fixed;
+    margin-right: 18px;
+    right: 0;
+    margin-bottom: 10px;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .abas div#novos .adicionar a.btn-floating.btn-large,
+    .abas div#ativos .adicionar a.btn-floating.btn-large,
+    .abas div#ocultos .adicionar a.btn-floating.btn-large {
+      background: #8db543; }

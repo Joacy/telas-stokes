@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Proxima Nova Regular"), url(../proxima-nova/ProximaNova-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Proxima Nova Thin"), url(../proxima-nova/ProximaNovaT-Thin.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Proxima Nova Light"), url(../proxima-nova/ProximaNova-Light.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Proxima Nova Semibold"), url(../proxima-nova/ProximaNova-Semibold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Proxima Nova Bold"), url(../proxima-nova/ProximaNova-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Proxima Nova Extrabold"), url(../proxima-nova/ProximaNova-Extrabld.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Proxima Nova Black"), url(../proxima-nova/ProximaNova-Black.woff) format("woff"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova"; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2dbdf2), to(#a209bb));
+  background-image: -webkit-linear-gradient(left, #2dbdf2, #a209bb);
+  background-image: -o-linear-gradient(left, #2dbdf2, #a209bb);
+  background-image: linear-gradient(to right, #2dbdf2, #a209bb);
+  height: 56px;
+  width: 100%; }
+  header a.sidenav-trigger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header a.sidenav-trigger i.material-icons {
+      font-weight: 900;
+      margin: 0px 18px;
+      color: #000000; }
+  header ul.sidenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    header ul.sidenav .titulo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0px 18px;
+      height: 56px; }
+      header ul.sidenav .titulo a p {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 600; }
+    header ul.sidenav li {
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      header ul.sidenav li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background: transparent;
+        margin: 0px;
+        padding: 0px 18px; }
+        header ul.sidenav li a p {
+          font-size: 16px;
+          color: #000000; }
+        header ul.sidenav li a i.material-icons {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px;
+          color: #dfdfe1; }
+    header ul.sidenav li:hover a i.material-icons {
+      color: #000000; }
+    header ul.sidenav li:last-child {
+      margin-bottom: 50px; }
+    header ul.sidenav .meio a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px 18px;
+      margin-bottom: 5px;
+      background: #f9f9f9;
+      font-weight: 600;
+      font-size: 16px; }
+    header ul.sidenav .meio a.visualizar {
+      color: #5c75dc; }
+    header ul.sidenav .meio a.sair {
+      color: #ca1f27; }
+
+.navlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 86px;
+  width: 100%;
+  background: transparent; }
+  .navlogo .caixa-logo {
+    margin: -45px auto 30px;
+    background: #ffffff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+    .navlogo .caixa-logo img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px; }
+
+.bem-vindo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 42px;
+  margin-bottom: 15px; }
+  .bem-vindo h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .bem-vindo p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4; }
+
+.produtos-habilitar {
+  padding: 0px 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 30px; }
+  .produtos-habilitar .produto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .produtos-habilitar .produto a {
+      margin: 0;
+      padding: 0;
+      width: 70px;
+      height: 70px; }
+      .produtos-habilitar .produto a img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px; }
+
+.meus-produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .meus-produtos a {
+    font-size: 16px;
+    color: #5c75dc; }
