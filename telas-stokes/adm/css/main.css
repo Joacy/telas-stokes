@@ -117,6 +117,9 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -132,8 +135,17 @@ header {
           height: 24px;
           width: 24px;
           color: #dfdfe1; }
+        header ul.sidenav li a svg#Capa_1 {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px; }
+          header ul.sidenav li a svg#Capa_1 path {
+            fill: #dfdfe1; }
     header ul.sidenav li:hover a i.material-icons {
       color: #000000; }
+    header ul.sidenav li:hover a svg#Capa_1 path {
+      fill: #000000; }
     header ul.sidenav li:last-child {
       margin-bottom: 50px; }
     header ul.sidenav .meio a {
@@ -809,22 +821,40 @@ header.navbar-fixed {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; }
         .abas div#editar .fotos form .precos-variacoes .coluna2 a {
-          height: 30px;
-          width: 30px; }
+          height: 50%;
+          width: auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
           .abas div#editar .fotos form .precos-variacoes .coluna2 a i.material-icons {
             color: #000000;
-            font-size: 30px; }
+            font-size: 36px; }
+          .abas div#editar .fotos form .precos-variacoes .coluna2 a svg#Capa_1 {
+            width: 24px;
+            height: 24px; }
+            .abas div#editar .fotos form .precos-variacoes .coluna2 a svg#Capa_1 path {
+              fill: #000000; }
+          .abas div#editar .fotos form .precos-variacoes .coluna2 a svg#Capa_2 {
+            width: 20px;
+            height: 20px; }
+            .abas div#editar .fotos form .precos-variacoes .coluna2 a svg#Capa_2 path {
+              fill: #000000; }
+        .abas div#editar .fotos form .precos-variacoes .coluna2 a.seta-direita {
+          margin-bottom: 15px;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end; }
   .abas div#editar .fotos .link-variacao {
     margin: 0px 18px;
     margin-bottom: 15px; }

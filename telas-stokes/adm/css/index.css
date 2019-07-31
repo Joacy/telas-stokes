@@ -117,6 +117,9 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -132,8 +135,17 @@ header {
           height: 24px;
           width: 24px;
           color: #dfdfe1; }
+        header ul.sidenav li a svg#Capa_1 {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px; }
+          header ul.sidenav li a svg#Capa_1 path {
+            fill: #dfdfe1; }
     header ul.sidenav li:hover a i.material-icons {
       color: #000000; }
+    header ul.sidenav li:hover a svg#Capa_1 path {
+      fill: #000000; }
     header ul.sidenav li:last-child {
       margin-bottom: 50px; }
     header ul.sidenav .meio a {

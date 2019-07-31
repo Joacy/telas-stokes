@@ -37,7 +37,8 @@ h5 {
   text-align: center;
   padding: 0px 18px;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 56px;
 
   h1 {
     font-size: 24px;
@@ -67,6 +68,17 @@ h5 {
           width: 24px;
           color: #000000;
           overflow: hidden;
+        }
+
+        svg#Capa_1 {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px;
+
+          path {
+            fill: #000000;
+          }
         }
       }
     }

@@ -21,10 +21,13 @@ header.navbar-fixed {
       display: -ms-flexbox;
       display: flex;
       margin: 0; }
-      header.navbar-fixed nav a svg {
-        width: 24px;
+      header.navbar-fixed nav a svg#Capa_1 {
+        padding: 0px;
+        margin: 0px;
         height: 24px;
-        color: #000000; }
+        width: 24px; }
+        header.navbar-fixed nav a svg#Capa_1 path {
+          fill: #000000; }
     header.navbar-fixed nav p.brand-logo {
       -webkit-box-pack: center;
       -ms-flex-pack: center;

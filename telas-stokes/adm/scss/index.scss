@@ -67,6 +67,7 @@ header {
 
       a {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         background: transparent;
         margin: 0px;
@@ -84,12 +85,29 @@ header {
           width: 24px;
           color: #dfdfe1;
         }
+
+        svg#Capa_1 {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px;
+
+          path {
+            fill: #dfdfe1;
+          }
+        }
       }
     }
     li:hover {
       a {
         i.material-icons {
           color: #000000;
+        }
+
+        svg#Capa_1 {
+          path {
+            fill: #000000;
+          }
         }
       }
     }

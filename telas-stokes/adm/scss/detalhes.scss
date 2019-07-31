@@ -181,18 +181,42 @@ h5 {
           .coluna2 {
             width: 15%;
             display: flex;
-            align-items: flex-end;
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-end;
 
             a {
-              height: 30px;
-              width: 30px;
+              height: 50%;
+              width: auto;
+              display: flex;
+              justify-content: center;
 
               i.material-icons {
                 color: #000000;
-                font-size: 30px;
+                font-size: 36px;
               }
+
+              svg#Capa_1 {
+                width: 24px;
+                height: 24px;
+
+                path {
+                  fill: #000000;
+                }
+              }
+
+              svg#Capa_2 {
+                width: 20px;
+                height: 20px;
+
+                path {
+                  fill: #000000;
+                }
+              }
+            }
+
+            a.seta-direita {
+              margin-bottom: 15px;
+              align-items: flex-end;
             }
           }
         }
