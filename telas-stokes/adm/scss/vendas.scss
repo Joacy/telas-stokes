@@ -36,49 +36,36 @@ h5 {
 
   form {
     margin-bottom: 10px;
-    width: 100%;
 
-    .form-field {
+    .input-field {
       position: relative;
-
-      input[type="text"] {
-        background: #ffffff;
-        padding: 0px 5px;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
-        box-sizing: border-box;
-        color: #000000;
-        font-size: 16px;
-        font-family: "Proxima Nova";
-      }
-
-      ::placeholder {
-        color: #000000;
-      }
 
       a {
         position: absolute;
         bottom: 7px;
-        right: 5px;
+        right: 0;
         cursor: pointer;
 
         i.material-icons {
-          color: #000000;
+          color: #9e9e9e;
           font-size: 30px;
         }
       }
+    }
 
+    .form-field {
       select {
         display: block;
-        background: #ffffff;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
         padding: 0px;
         box-sizing: border-box;
-        color: #000000;
+        color: #9e9e9e;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 16px;
         font-family: "Proxima Nova";
-        margin-bottom: 8px;
 
         option {
           color: #000000;

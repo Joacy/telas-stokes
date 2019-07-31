@@ -151,34 +151,22 @@ form {
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
-    form .linha-desconto .form-field {
-      margin-bottom: 10px;
+    form .linha-desconto .input-field {
+      font-family: "Proxima Nova";
       width: 100%; }
-      form .linha-desconto .form-field label {
-        color: #000000;
-        font-size: 14px; }
-      form .linha-desconto .form-field input[type="text"] {
-        padding: 0px 5px;
-        background: #ffffff;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        color: #000000;
-        font-size: 16px;
-        font-family: "Proxima Nova"; }
     form .linha-desconto .linha-radio {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: end;
       -ms-flex-align: end;
-      align-items: flex-end; }
+      align-items: flex-end;
+      margin-bottom: 3px; }
       form .linha-desconto .linha-radio label {
         margin-bottom: 18px; }
         form .linha-desconto .linha-radio label input[type="radio"] + span {
           width: 50px;
-          height: 42px;
+          height: 40px;
           margin: 0;
           padding: 10px; }
         form .linha-desconto .linha-radio label input[type="radio"] + span:after,

@@ -28,7 +28,7 @@ h5 {
   padding: 0;
 }
 
-@import 'header-geral.scss';
+@import "header-geral.scss";
 
 form {
   margin: 0px 18px;
@@ -59,37 +59,22 @@ form {
     display: flex;
     width: 100%;
 
-    .form-field {
-      margin-bottom: 10px;
+    .input-field {
+      font-family: "Proxima Nova";
       width: 100%;
-
-      label {
-        color: #000000;
-        font-size: 14px;
-      }
-
-      input[type="text"] {
-        padding: 0px 5px;
-        background: #ffffff;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
-        box-sizing: border-box;
-        color: #000000;
-        font-size: 16px;
-        font-family: "Proxima Nova";
-      }
     }
 
     .linha-radio {
       display: flex;
       align-items: flex-end;
+      margin-bottom: 3px;
 
       label {
         margin-bottom: 18px;
 
         input[type="radio"] + span {
           width: 50px;
-          height: 42px;
+          height: 40px;
           margin: 0;
           padding: 10px;
         }

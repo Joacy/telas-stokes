@@ -139,7 +139,7 @@ header.navbar-fixed {
     background: transparent;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 210px; }
     .abas ul#tabs-swipe-demo.tabs li.tab {
       display: -webkit-box;
@@ -168,68 +168,40 @@ header.navbar-fixed {
   .abas div#ativos form,
   .abas div#ocultos form {
     margin-bottom: 10px; }
-    .abas div#novos form .form-field,
-    .abas div#ativos form .form-field,
-    .abas div#ocultos form .form-field {
+    .abas div#novos form .input-field,
+    .abas div#ativos form .input-field,
+    .abas div#ocultos form .input-field {
       position: relative; }
-      .abas div#novos form .form-field input[type="text"],
-      .abas div#ativos form .form-field input[type="text"],
-      .abas div#ocultos form .form-field input[type="text"] {
-        background: #ffffff;
-        padding: 0px 5px;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        color: #000000;
-        font-size: 16px;
-        font-family: "Proxima Nova"; }
-      .abas div#novos form .form-field ::-webkit-input-placeholder,
-      .abas div#ativos form .form-field ::-webkit-input-placeholder,
-      .abas div#ocultos form .form-field ::-webkit-input-placeholder {
-        color: #000000; }
-      .abas div#novos form .form-field :-ms-input-placeholder,
-      .abas div#ativos form .form-field :-ms-input-placeholder,
-      .abas div#ocultos form .form-field :-ms-input-placeholder {
-        color: #000000; }
-      .abas div#novos form .form-field ::-ms-input-placeholder,
-      .abas div#ativos form .form-field ::-ms-input-placeholder,
-      .abas div#ocultos form .form-field ::-ms-input-placeholder {
-        color: #000000; }
-      .abas div#novos form .form-field ::placeholder,
-      .abas div#ativos form .form-field ::placeholder,
-      .abas div#ocultos form .form-field ::placeholder {
-        color: #000000; }
-      .abas div#novos form .form-field a,
-      .abas div#ativos form .form-field a,
-      .abas div#ocultos form .form-field a {
+      .abas div#novos form .input-field a,
+      .abas div#ativos form .input-field a,
+      .abas div#ocultos form .input-field a {
         position: absolute;
         bottom: 7px;
-        right: 5px;
+        right: 0;
         cursor: pointer; }
-        .abas div#novos form .form-field a i.material-icons,
-        .abas div#ativos form .form-field a i.material-icons,
-        .abas div#ocultos form .form-field a i.material-icons {
-          color: #000000;
+        .abas div#novos form .input-field a i.material-icons,
+        .abas div#ativos form .input-field a i.material-icons,
+        .abas div#ocultos form .input-field a i.material-icons {
+          color: #9e9e9e;
           font-size: 30px; }
-      .abas div#novos form .form-field select,
-      .abas div#ativos form .form-field select,
-      .abas div#ocultos form .form-field select {
-        display: block;
-        background: #ffffff;
-        border: 1px solid #dfdfe1;
-        border-radius: 3px;
-        padding: 0px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+    .abas div#novos form .form-field select,
+    .abas div#ativos form .form-field select,
+    .abas div#ocultos form .form-field select {
+      display: block;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #9e9e9e;
+      padding: 0px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #9e9e9e;
+      font-size: 16px;
+      font-family: "Proxima Nova"; }
+      .abas div#novos form .form-field select option,
+      .abas div#ativos form .form-field select option,
+      .abas div#ocultos form .form-field select option {
         color: #000000;
-        font-size: 16px;
-        font-family: "Proxima Nova"; }
-        .abas div#novos form .form-field select option,
-        .abas div#ativos form .form-field select option,
-        .abas div#ocultos form .form-field select option {
-          color: #000000;
-          background: #ffffff; }
+        background: #ffffff; }
   .abas div#novos .produtos,
   .abas div#ativos .produtos,
   .abas div#ocultos .produtos {
