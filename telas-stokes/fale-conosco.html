@@ -82,25 +82,27 @@
 
     <div class="login">
         <form>
-            <div class="form-field">
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="JOAO A SILVA">
+            <div class="input-field">
+                <input type="text" id="nome" name="nome">
+                <label for="nome">Nome</label>
             </div>
-            <div class="form-field">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="joao@linceweb.com.br">
+            <div class="input-field">
+                <input type="email" id="email" name="email">
+                <label for="email">Email</label>
             </div>
-            <div class="form-field">
-                <label>Telefone</label>
-                <input type="text" name="telefone" placeholder="(71) 9999-0101">
+            <div class="input-field">
+                <input type="text" id="telefone" name="telefone">
+                <label for="telefone">Telefone</label>
             </div>
-            <div class="form-field">
-                <label>Assunto</label>
-                <input type="text" name="assunto" placeholder="Urgente">
+            <div class="input-field">
+                <input type="text" id="assunto" name="assunto">
+                <label for="assunto">Assunto</label>
             </div>
 
-            <p>Mensagem</p>
-            <textarea name="mensagem" rows="4" placeholder="Mensagem de João"></textarea>
+            <div class="input-field">
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                <label for="mensagem">Mensagem</label>               
+            </div>
 
         </form>
     </div>
