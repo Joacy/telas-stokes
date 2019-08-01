@@ -131,15 +131,20 @@ header.navbar-fixed {
   padding: 0px 18px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
   margin-bottom: 30px;
   width: 100%; }
-  .listagem a.categoria {
+  .listagem .categoria {
     border-radius: 4px;
-    width: 100%; }
-    .listagem a.categoria .imagem {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfe1; }
+    .listagem .categoria .imagem {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -149,23 +154,39 @@ header.navbar-fixed {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      .listagem a.categoria .imagem img {
+      .listagem .categoria .imagem img {
         border-radius: 4px;
-        width: 100%; }
-    .listagem a.categoria .legenda {
+        width: 70px;
+        height: 70px; }
+    .listagem .categoria .legenda {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%; }
-      .listagem a.categoria .legenda .nome {
+      text-align: left;
+      width: 100%;
+      margin-left: 10px; }
+      .listagem .categoria .legenda .nome {
         line-height: 1.4;
         margin-top: 4px;
-        font-size: 14px;
+        font-size: 16px;
         color: #000000; }
+    .listagem .categoria .icones {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .listagem .categoria .icones a {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px; }
+        .listagem .categoria .icones a svg {
+          width: 24px;
+          height: 24px;
+          fill: #8db543; }
+  .listagem .categoria:last-child {
+    border-bottom: none; }

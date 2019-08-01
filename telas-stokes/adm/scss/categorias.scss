@@ -33,14 +33,17 @@ h5 {
   margin-top: 30px;
   padding: 0px 18px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
   margin-bottom: 30px;
   width: 100%;
 
-  a.categoria {
+  .categoria {
     border-radius: 4px;
     width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfe1;
 
     .imagem {
       display: flex;
@@ -49,23 +52,45 @@ h5 {
 
       img {
         border-radius: 4px;
-        width: 100%;
+        width: 70px;
+        height: 70px;
       }
     }
 
     .legenda {
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
+      text-align: left;
       width: 100%;
-      
+      margin-left: 10px;
+
       .nome {
         line-height: 1.4;
         margin-top: 4px;
-        font-size: 14px;
+        font-size: 16px;
         color: #000000;
       }
     }
+
+    .icones {
+      display: flex;
+      align-items: center;
+
+      a {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #8db543;
+        }
+      }
+    }
+  }
+
+  .categoria:last-child {
+    border-bottom: none;
   }
 }

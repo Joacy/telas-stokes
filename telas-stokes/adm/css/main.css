@@ -1485,20 +1485,25 @@ header.navbar-fixed {
       margin-right: 10px; }
       .cupons .cupom .informacoes h5 {
         color: #000000;
-        font-size: 20px; }
+        font-size: 18px; }
       .cupons .cupom .informacoes p {
         color: #545460;
-        font-size: 18px; }
+        font-size: 16px; }
     .cupons .cupom .icones {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-      .cupons .cupom .icones svg {
-        width: 30px;
-        height: 30px;
-        fill: #8db543; }
-      .cupons .cupom .icones svg.busca {
-        margin-right: 20px; }
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .cupons .cupom .icones a {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px; }
+        .cupons .cupom .icones a svg {
+          width: 24px;
+          height: 24px;
+          fill: #8db543; }
   .cupons .cupom:first-child {
     padding-top: 0px; }
   .cupons .cupom:last-child {
