@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stokes - Use.Voga</title>
+
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/area-entrega.css">
+
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <nav>
+            <a href="javascript:(history.back())">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400.004px" height="400.004px"
+                    viewBox="0 0 400.004 400.004" style="enable-background:new 0 0 400.004 400.004;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757
+                                c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072
+                                c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315
+                                C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </svg>
+            </a>
+
+            <p class="brand-logo center">Área de Entrega</p>
+            <a class="brand-logo right" href="index.html">
+                <div class="logo">
+                    <img src="imagens/logo-medio.jpg">
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <div class="formulario">
+        <form>
+            <!--
+                Nome
+                Cep início
+                Cep fim
+                Valor frete
+                Frete grátis a partir de
+                Pode retirar no local: S,N
+            -->
+            <div class="input-field">
+                <input id="nome" name="nome" type="text">
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="calculo-frete">
+                <div class="input-field">
+                    <input id="cep-inicio" name="cep-inicio" type="text">
+                    <label for="cep-inicio">CEP Início</label>
+                </div>
+                <div class="input-field">
+                    <input id="cep-fim" name="cep-fim" type="text">
+                    <label for="cep-fim">CEP Fim</label>
+                </div>
+                <div class="input-field">
+                    <input id="valor-frete" name="valor-frete" type="text">
+                    <label for="valor-frete">Valor Frete</label>
+                </div>
+                <div class="input-field">
+                    <input id="frete-gratis" name="frete-gratis" type="text">
+                    <label for="frete-gratis">Frete Grátis a partir de:</label>
+                </div>
+            </div>
+
+            <div class="retirar-no-local">
+                <p>Retirar no local</p>
+                <label>
+                    <input id="sim" value="sim" name="retirar-local" type="radio" checked>
+                    <span>Sim</span>
+                </label>
+
+                <label>
+                    <input id="nao" value="nao" name="retirar-local" type="radio">
+                    <span>Não</span>
+                </label>
+            </div>
+
+            <div class="botao-cadastrar">
+                <button type="submit" href="">CADASTRAR</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
