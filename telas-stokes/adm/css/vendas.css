@@ -138,7 +138,7 @@ header.navbar-fixed {
         margin-bottom: 0; }
       .formulario form .input-field a {
         position: absolute;
-        bottom: 7px;
+        bottom: 0;
         right: 0;
         cursor: pointer; }
         .formulario form .input-field a i.material-icons {
