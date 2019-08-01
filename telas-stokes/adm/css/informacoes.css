@@ -132,15 +132,13 @@ header.navbar-fixed {
   margin-top: 25px; }
   .formulario form textarea {
     height: auto;
-    background: #ffffff;
-    padding: 10px;
-    border: 1px solid #dfdfe1;
-    border-radius: 3px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #9e9e9e;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    color: #000000;
+    color: #545361;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     font-family: "Proxima Nova"; }
   .formulario form label {
     display: -webkit-box;
@@ -155,12 +153,14 @@ header.navbar-fixed {
       line-height: normal;
       font-size: 16px;
       color: #000000;
+      margin-top: 10px;
       margin-bottom: 10px; }
   .formulario form .selecao-cores {
-    margin-bottom: 15px; }
+    margin-bottom: 25px; }
     .formulario form .selecao-cores p {
       color: #000000;
       font-size: 16px;
+      margin-top: 10px;
       margin-bottom: 10px; }
     .formulario form .selecao-cores .linha-selecao {
       display: -webkit-box;

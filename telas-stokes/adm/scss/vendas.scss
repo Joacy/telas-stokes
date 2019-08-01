@@ -159,11 +159,16 @@ h5 {
     }
     .icone {
       display: flex;
+      
+      a {
+        width: 24px;
+        height: 24px;
 
-      svg {
-        width: 30px;
-        height: 30px;
-        fill: #8db543;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #8db543;
+        }
       }
     }
   }

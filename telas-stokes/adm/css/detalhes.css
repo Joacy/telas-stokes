@@ -202,22 +202,21 @@ header.navbar-fixed {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .abas div#editar .fotos form textarea {
       height: auto;
-      background: #ffffff;
-      padding: 10px;
-      border: 1px solid #dfdfe1;
-      border-radius: 3px;
+      padding: 10px 5px;
+      border-bottom: 1px solid #9e9e9e;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      color: #000000;
+      color: #545361;
       font-size: 16px;
+      margin: 10px 0px;
       font-family: "Proxima Nova"; }
     .abas div#editar .fotos form .form-field select {
       display: block;
-      background: #ffffff;
-      border: 1px solid #dfdfe1;
+      background: transparent;
+      border-bottom: 1px solid #9e9e9e;
       border-radius: 3px;
       padding: 0px;
-      padding: 0px 5px;
+      padding: 0px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       color: #000000;
@@ -232,11 +231,14 @@ header.navbar-fixed {
       font-weight: 700;
       color: #000000;
       padding: 15px 0px;
+      padding-bottom: 5px;
       text-align: left; }
     .abas div#editar .fotos form .precos-variacoes {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      .abas div#editar .fotos form .precos-variacoes textarea {
+        margin: 0; }
       .abas div#editar .fotos form .precos-variacoes .coluna1 {
         width: 85%; }
         .abas div#editar .fotos form .precos-variacoes .coluna1 .codigo {
@@ -265,7 +267,10 @@ header.navbar-fixed {
           display: flex;
           -webkit-box-pack: center;
           -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end; }
           .abas div#editar .fotos form .precos-variacoes .coluna2 a i.material-icons {
             color: #000000;
             font-size: 36px; }
@@ -279,11 +284,6 @@ header.navbar-fixed {
             height: 20px; }
             .abas div#editar .fotos form .precos-variacoes .coluna2 a svg#Capa_2 path {
               fill: #000000; }
-        .abas div#editar .fotos form .precos-variacoes .coluna2 a.seta-direita {
-          margin-bottom: 15px;
-          -webkit-box-align: end;
-          -ms-flex-align: end;
-          align-items: flex-end; }
   .abas div#editar .fotos .link-variacao {
     margin: 0px 18px;
     margin-bottom: 15px; }
@@ -423,15 +423,15 @@ header.navbar-fixed {
       justify-content: space-between; }
       .abas div#visualizar .selecionar-quantidade .caixa-detalhe .quantidade i {
         cursor: pointer; }
-      .abas div#visualizar .selecionar-quantidade .caixa-detalhe .quantidade input {
+      .abas div#visualizar .selecionar-quantidade .caixa-detalhe .quantidade input[type="number"] {
         text-align: center;
         width: 40px;
         height: 40px;
         margin: 0px 10px;
-        background: #ffffff;
+        background: transparent;
         color: #000000;
         font-size: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.1); }
+        border-bottom: 1px solid #9e9e9e; }
 
 .abas .botao-editar {
   display: -webkit-box;
