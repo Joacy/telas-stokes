@@ -70,6 +70,7 @@ form {
       display: block;
       background: transparent;
       border: none;
+      border-bottom: 1px solid #9e9e9e;
       padding: 0px 5px;
       box-sizing: border-box;
       color: #9e9e9e;
@@ -93,6 +94,11 @@ form {
     .input-field {
       input {
         margin-bottom: 0px;
+      }
+    }
+    .input-field {
+      input {
+        margin-top: 9px;
       }
     }
   }
