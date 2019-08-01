@@ -125,3 +125,106 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+.informacoes-categoria {
+  margin-top: 30px;
+  padding: 0px 18px; }
+  .informacoes-categoria form .foto-categoria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    .informacoes-categoria form .foto-categoria .foto-atual {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .informacoes-categoria form .foto-categoria .foto-atual img {
+        border-radius: 4px;
+        height: 50px;
+        width: 50px; }
+      .informacoes-categoria form .foto-categoria .foto-atual p {
+        font-size: 16px;
+        color: #9e9e9e;
+        margin-left: 15px; }
+    .informacoes-categoria form .foto-categoria .file-field.input-field {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      position: relative; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field .file-path-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        .informacoes-categoria form .foto-categoria .file-field.input-field .file-path-wrapper .file-path {
+          width: 100%; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field ::-webkit-input-placeholder {
+        color: #9e9e9e;
+        font-size: 14px; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field :-ms-input-placeholder {
+        color: #9e9e9e;
+        font-size: 14px; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field ::-ms-input-placeholder {
+        color: #9e9e9e;
+        font-size: 14px; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field ::placeholder {
+        color: #9e9e9e;
+        font-size: 14px; }
+      .informacoes-categoria form .foto-categoria .file-field.input-field .icone {
+        position: absolute;
+        right: 0; }
+        .informacoes-categoria form .foto-categoria .file-field.input-field .icone i.material-icons {
+          width: 24px;
+          height: 24px;
+          color: #8db543; }
+  .informacoes-categoria form .botao-concluir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 56px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    margin-top: 20px;
+    z-index: 999;
+    background: transparent; }
+    .informacoes-categoria form .botao-concluir button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      background: #8cb543;
+      height: 50px;
+      width: 100%;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      border-radius: 3px;
+      line-height: normal;
+      cursor: pointer; }
