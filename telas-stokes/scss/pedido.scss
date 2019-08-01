@@ -1,0 +1,205 @@
+@import "fonts";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+@import "header-geral.scss";
+
+.status-pedido {
+  margin: 0px 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .titulo-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 16px;
+      color: #545361;
+      line-height: normal;
+    }
+  }
+
+  form {
+    width: 100%;
+
+    .linha-radio {
+      display: flex;
+      align-items: center;
+
+      label {
+        margin-right: 15px;
+        font-family: "Proxima Nova";
+
+        input[type="radio"] + span:after {
+          display: none;
+        }
+
+        input[type="radio"] + span:before {
+          margin-left: 0;
+        }
+
+        input[type="radio"] + span {
+          color: #000000;
+          padding-left: 20px;
+          font-family: "Proxima Nova";
+        }
+
+        input[type="radio"][for="novo"]:checked + span:before {
+          background: #5a72dc;
+          border-color: #5a72dc;
+        }
+        input[for="novo"] + span,
+        input[for="novo"]:checked + span {
+          color: #5a72dc;
+        }
+
+        input[type="radio"][for="andamento"]:checked + span:before {
+          background: #d96d00;
+          border-color: #d96d00;
+        }
+        input[for="andamento"] + span,
+        input[for="andamento"]:checked + span {
+          color: #d96d00;
+        }
+
+        input[type="radio"][for="cancelado"]:checked + span:before {
+          background: #d80100;
+          border-color: #d80100;
+        }
+        input[for="cancelado"] + span,
+        input[for="cancelado"]:checked + span {
+          color: #d80100;
+        }
+      }
+      label:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.dados-pedido {
+  margin: 0px 18px;
+
+  .titulo-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 16px;
+      color: #545361;
+      line-height: normal;
+    }
+  }
+
+  .produto {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .foto {
+      padding: 0px;
+      margin-right: 15px;
+      width: 70px;
+      height: 70px;
+
+      img {
+        width: 100%;
+        border-radius: 7px;
+      }
+    }
+
+    .legenda {
+      .nome {
+        color: #000000;
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 5px;
+      }
+      .preco {
+        color: #545361;
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+  }
+  .produto.primeiro {
+    padding-top: 10px;
+  }
+}
+
+.dados-valor {
+  margin: 0px 18px;
+  padding: 15px 0px;
+  border-bottom: 1px solid #dfdfe1;
+
+  .linha-valor {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      color: #545361;
+      line-height: normal;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.dados-valor.total {
+  border-bottom: 0;
+  margin-bottom: 10px;
+
+  .linha-valor {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 16px;
+      color: #000000;
+      line-height: normal;
+    }
+  }
+}
+
+svg.linha-base {
+  width: 50px;
+  height: 5px;
+
+  rect {
+    width: 100%;
+    height: 100%;
+    fill: #e5e5e5;
+    stroke-width: 0;
+  }
+}

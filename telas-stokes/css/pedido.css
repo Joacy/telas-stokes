@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Proxima Nova Regular"), url(../proxima-nova/ProximaNova-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Thin";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Proxima Nova Thin"), url(../proxima-nova/ProximaNovaT-Thin.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Proxima Nova Light"), url(../proxima-nova/ProximaNova-Light.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Proxima Nova Semibold"), url(../proxima-nova/ProximaNova-Semibold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Proxima Nova Bold"), url(../proxima-nova/ProximaNova-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Proxima Nova Extrabold"), url(../proxima-nova/ProximaNova-Extrabld.woff) format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Proxima Nova Black"), url(../proxima-nova/ProximaNova-Black.woff) format("woff"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Proxima Nova"; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+header.navbar-fixed {
+  width: 100%; }
+  header.navbar-fixed nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #ffffff;
+    height: 56px;
+    width: 100%;
+    padding: 0px 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    header.navbar-fixed nav a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a svg#Capa_1 {
+        padding: 0px;
+        margin: 0px;
+        height: 24px;
+        width: 24px; }
+        header.navbar-fixed nav a svg#Capa_1 path {
+          fill: #000000; }
+    header.navbar-fixed nav p.brand-logo {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      color: #000000; }
+    header.navbar-fixed nav a.brand-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header.navbar-fixed nav a.brand-logo .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+        header.navbar-fixed nav a.brand-logo .logo img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%; }
+    header.navbar-fixed nav .brand-logo.right {
+      right: 18px; }
+
+.status-pedido {
+  margin: 0px 18px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .status-pedido .titulo-linha {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 10px; }
+    .status-pedido .titulo-linha h3 {
+      font-size: 16px;
+      color: #545361;
+      line-height: normal; }
+  .status-pedido form {
+    width: 100%; }
+    .status-pedido form .linha-radio {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .status-pedido form .linha-radio label {
+        margin-right: 15px;
+        font-family: "Proxima Nova"; }
+        .status-pedido form .linha-radio label input[type="radio"] + span:after {
+          display: none; }
+        .status-pedido form .linha-radio label input[type="radio"] + span:before {
+          margin-left: 0; }
+        .status-pedido form .linha-radio label input[type="radio"] + span {
+          color: #000000;
+          padding-left: 20px;
+          font-family: "Proxima Nova"; }
+        .status-pedido form .linha-radio label input[type="radio"][for="novo"]:checked + span:before {
+          background: #5a72dc;
+          border-color: #5a72dc; }
+        .status-pedido form .linha-radio label input[for="novo"] + span,
+        .status-pedido form .linha-radio label input[for="novo"]:checked + span {
+          color: #5a72dc; }
+        .status-pedido form .linha-radio label input[type="radio"][for="andamento"]:checked + span:before {
+          background: #d96d00;
+          border-color: #d96d00; }
+        .status-pedido form .linha-radio label input[for="andamento"] + span,
+        .status-pedido form .linha-radio label input[for="andamento"]:checked + span {
+          color: #d96d00; }
+        .status-pedido form .linha-radio label input[type="radio"][for="cancelado"]:checked + span:before {
+          background: #d80100;
+          border-color: #d80100; }
+        .status-pedido form .linha-radio label input[for="cancelado"] + span,
+        .status-pedido form .linha-radio label input[for="cancelado"]:checked + span {
+          color: #d80100; }
+      .status-pedido form .linha-radio label:last-child {
+        margin-right: 0; }
+
+.dados-pedido {
+  margin: 0px 18px; }
+  .dados-pedido .titulo-linha {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 10px; }
+    .dados-pedido .titulo-linha h3 {
+      font-size: 16px;
+      color: #545361;
+      line-height: normal; }
+  .dados-pedido .produto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .dados-pedido .produto .foto {
+      padding: 0px;
+      margin-right: 15px;
+      width: 70px;
+      height: 70px; }
+      .dados-pedido .produto .foto img {
+        width: 100%;
+        border-radius: 7px; }
+    .dados-pedido .produto .legenda .nome {
+      color: #000000;
+      font-size: 14px;
+      line-height: normal;
+      margin-bottom: 5px; }
+    .dados-pedido .produto .legenda .preco {
+      color: #545361;
+      font-size: 14px;
+      line-height: normal; }
+  .dados-pedido .produto.primeiro {
+    padding-top: 10px; }
+
+.dados-valor {
+  margin: 0px 18px;
+  padding: 15px 0px;
+  border-bottom: 1px solid #dfdfe1; }
+  .dados-valor .linha-valor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .dados-valor .linha-valor p {
+      font-size: 14px;
+      color: #545361;
+      line-height: normal;
+      margin-bottom: 3px; }
+
+.dados-valor.total {
+  border-bottom: 0;
+  margin-bottom: 10px; }
+  .dados-valor.total .linha-valor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .dados-valor.total .linha-valor p {
+      font-size: 16px;
+      color: #000000;
+      line-height: normal; }
+
+svg.linha-base {
+  width: 50px;
+  height: 5px; }
+  svg.linha-base rect {
+    width: 100%;
+    height: 100%;
+    fill: #e5e5e5;
+    stroke-width: 0; }
