@@ -160,15 +160,15 @@ form {
       display: flex;
       -webkit-box-align: end;
       -ms-flex-align: end;
-      align-items: flex-end;
-      margin-bottom: 3px; }
+      align-items: flex-end; }
       form .linha-desconto .linha-radio label {
-        margin-bottom: 18px; }
+        width: 50px;
+        height: 40px;
+        margin-bottom: calc(1rem + 8px); }
         form .linha-desconto .linha-radio label input[type="radio"] + span {
           width: 50px;
           height: 40px;
-          margin: 0;
-          padding: 10px; }
+          margin: 0; }
         form .linha-desconto .linha-radio label input[type="radio"] + span:after,
         form .linha-desconto .linha-radio label input[type="radio"] + span:before {
           display: none; }
@@ -185,7 +185,7 @@ form {
           background: #d7d7d7;
           color: #545460;
           font-size: 20px;
-          padding: 10px;
+          padding: 0;
           margin: 0; }
         form .linha-desconto .linha-radio label input[for="porcentagem"]:checked + span {
           background: #8cb543;
@@ -203,7 +203,7 @@ form {
           background: #d7d7d7;
           color: #5d5d69;
           font-size: 20px;
-          padding: 10px;
+          padding: 0;
           margin: 0; }
         form .linha-desconto .linha-radio label input[for="real"]:checked + span {
           background: #8cb543;
