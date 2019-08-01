@@ -227,4 +227,5 @@ header.navbar-fixed {
       font-size: 20px;
       border-radius: 3px;
       line-height: normal;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: "Proxima Nova"; }

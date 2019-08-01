@@ -169,38 +169,54 @@ header.navbar-fixed {
         border-bottom: 2px solid #26a69a; }
       .login form .input-field label.active {
         color: #26a69a; }
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 56px;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  padding: 5px;
-  padding-top: 0; }
-  footer a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background: #8cb543;
-    height: 50px;
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 3px; }
+    .login form .botao-continuar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 56px;
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 5px;
+      padding-top: 0; }
+      .login form .botao-continuar a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background: #8cb543;
+        height: 50px;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-family: "Proxima Nova"; }
+        .login form .botao-continuar a i.material-icons {
+          width: 24px;
+          height: 24px;
+          margin-left: 5px; }
+        .login form .botao-continuar a svg#Capa_1 {
+          padding: 0px;
+          margin: 0px;
+          height: 24px;
+          width: 24px;
+          margin-left: 7px; }
+          .login form .botao-continuar a svg#Capa_1 path {
+            fill: #ffffff; }

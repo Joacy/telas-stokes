@@ -102,47 +102,50 @@ form {
       }
     }
   }
-}
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 56px;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  padding: 5px;
-  padding-top: 0;
-
-  a {
+  .botao-continuar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #8cb543;
-    height: 50px;
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 3px;
+    justify-content: space-between;
+    height: 56px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    padding-top: 0;
 
-    i.material-icons {
-      width: 24px;
-      height: 24px;
-      margin-left: 5px;
-    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #8cb543;
+      height: 50px;
+      width: 100%;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 3px;
+      appearance: none;
+      font-family: "Proxima Nova";
 
-    svg#Capa_1 {
-      padding: 0px;
-      margin: 0px;
-      height: 24px;
-      width: 24px;
-      margin-left: 7px;
+      i.material-icons {
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+      }
 
-      path {
-        fill: #ffffff;
+      svg#Capa_1 {
+        padding: 0px;
+        margin: 0px;
+        height: 24px;
+        width: 24px;
+        margin-left: 7px;
+
+        path {
+          fill: #ffffff;
+        }
       }
     }
   }

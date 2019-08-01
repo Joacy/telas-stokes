@@ -223,6 +223,7 @@ form {
   width: 100vw;
   position: fixed;
   bottom: 0;
+  left: 0;
   padding: 5px;
   padding-top: 0;
   z-index: 999; }
@@ -243,4 +244,8 @@ form {
     color: #ffffff;
     font-size: 20px;
     text-align: center;
-    border-radius: 3px; }
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Proxima Nova"; }

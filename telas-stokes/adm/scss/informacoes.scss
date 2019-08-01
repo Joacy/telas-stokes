@@ -183,6 +183,7 @@ h5 {
   width: 100vw;
   position: fixed;
   bottom: 0;
+  left: 0;
   padding: 5px;
   padding-top: 0;
   z-index: 999;
@@ -199,5 +200,7 @@ h5 {
     font-size: 20px;
     text-align: center;
     border-radius: 3px;
+    appearance: none;
+    font-family: "Proxima Nova";
   }
 }

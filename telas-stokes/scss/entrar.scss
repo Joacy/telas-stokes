@@ -56,12 +56,13 @@ h5 {
 
     .input-field {
       position: relative;
-
+      
       a {
         position: absolute;
         bottom: 10px;
         right: 0;
         text-decoration: none;
+        appearance: none;
 
         i.material-icons {
           height: 24px;
