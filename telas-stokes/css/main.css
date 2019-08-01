@@ -812,7 +812,7 @@ header.navbar-fixed {
   .login h1 {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 25px; }
+    margin-bottom: 10px; }
   .login form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1052,7 +1052,9 @@ header.navbar-fixed {
     .login form h1 {
       font-size: 24px;
       font-weight: 400;
-      margin-bottom: 25px; }
+      margin-bottom: 10px; }
+    .login form h1.mais-de-um {
+      margin-top: 20px; }
     .login form .input-field {
       font-family: "Proxima Nova"; }
     .login form .botao-continuar {
@@ -1289,7 +1291,9 @@ header.navbar-fixed {
     .login form h1 {
       font-size: 24px;
       font-weight: 400;
-      margin-bottom: 25px; }
+      margin-bottom: 10px; }
+    .login form h1.mais-de-um {
+      margin-top: 20px; }
     .login form .input-field {
       font-family: "Proxima Nova"; }
     .login form .botao-continuar {

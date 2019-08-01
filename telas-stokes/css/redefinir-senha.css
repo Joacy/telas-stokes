@@ -220,29 +220,3 @@ header.navbar-fixed {
           margin-left: 7px; }
           .login form .botao-continuar a svg#Capa_1 path {
             fill: #ffffff; }
-  .login .login-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .login .login-links p,
-    .login .login-links a {
-      color: #5b74d9;
-      font-size: 16px; }
-    .login .login-links img {
-      height: 40px;
-      width: 40px;
-      margin: 0px 10px; }
-    .login .login-links a {
-      text-decoration: none; }
-
-svg#Layer_1 {
-  fill: url(#MyGradient);
-  height: 40px;
-  width: 40px;
-  margin: 0px 10px; }
