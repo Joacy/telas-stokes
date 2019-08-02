@@ -39,9 +39,10 @@ h5 {
 
     .input-field {
       position: relative;
-      
-      input{
+
+      input {
         margin-bottom: 0;
+        font-size: 14px;
       }
 
       a {
@@ -51,30 +52,36 @@ h5 {
         cursor: pointer;
 
         i.material-icons {
-          color: #9e9e9e;
+          color: #535353;
           font-size: 30px;
         }
       }
+
+      .select-wrapper input.select-dropdown {
+        color: #9e9e9e;
+        font-size: 14px;
+      }
     }
 
-    .form-field {
-      select {
-        display: block;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #9e9e9e;
-        padding: 0px;
-        box-sizing: border-box;
-        color: #9e9e9e;
-        margin-top: 14px;
-        margin-bottom: 14px;
-        font-size: 16px;
-        font-family: "Proxima Nova";
+    .pesquisar-data {
+      display: flex;
+      width: 100%;
 
-        option {
-          color: #000000;
-          background: #ffffff;
+      .input-field {
+        user-select: none;
+        margin-top: 0;
+        width: 100%;
+
+        .datepicker {
+          user-select: none;
         }
+        ::placeholder {
+          font-size: 14px;
+          color: #9e9e9e;
+        }
+      }
+      .input-field.data-inicial {
+        margin-right: 15px;
       }
     }
   }
@@ -159,7 +166,7 @@ h5 {
     }
     .icone {
       display: flex;
-      
+
       a {
         width: 24px;
         height: 24px;

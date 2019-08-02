@@ -105,8 +105,7 @@
 
         <div class="metade">
 
-            <div class="form-field">
-                <label>Mês</label>
+            <div class="input-field">
                 <select>
                     <option value="jan">JAN</option>
                     <option value="fev">FEV</option>
@@ -121,15 +120,16 @@
                     <option value="nov">NOV</option>
                     <option value="dez">DEZ</option>
                 </select>
+                <label>Mês</label>
             </div>
 
-            <div class="form-field">
-                <label>Ano</label>
+            <div class="input-field">
                 <select>
                     <option value="ano1">2017</option>
                     <option value="ano2">2018</option>
                     <option value="ano3">2019</option>
                 </select>
+                <label>Ano</label>
             </div>
 
             <div class="input-field">
@@ -137,17 +137,17 @@
                 <label for="codigo-seguranca">Cód. Segurança</label>
             </div>
 
-            <div class="form-field">
-                <label>Parcelas</label>
+            <div class="input-field">
                 <select>
                     <option value="uma">1 x R$150,00</option>
                     <option value="duas">2 x R$75,00</option>
                     <option value="tres">3 x R$50,00</option>
                 </select>
+                <label>Parcelas</label>
             </div>
 
         </div>
-        
+
         <div class="botao-continuar">
             <a type="submit" href="pagamento-recorrente.html">CONTINUAR
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -190,6 +190,16 @@
             </a>
         </div>
     </form>
+
+    <script type="text/javascript">
+        //document.addEventListener('DOMContentLoaded', function () {
+        //    var elems = document.querySelectorAll('select');
+        //    var instances = M.FormSelect.init(elems, options);
+        //});
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
 
 </body>
 

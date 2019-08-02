@@ -95,8 +95,7 @@
                     <label for="pesquisa">Pesquisar</label>
                     <a href="javascript:;"><i class="material-icons">search</i></a>
                 </div>
-                <div class="form-field">
-                    <label></label>
+                <div class="input-field">
                     <select>
                         <option selected disabled value="categoria">Categoria</option>
                         <option value="categoria1">Botas</option>
@@ -232,8 +231,7 @@
                     <label for="pesquisa">Pesquisar</label>
                     <a href="javascript:;"><i class="material-icons">search</i></a>
                 </div>
-                <div class="form-field">
-                    <label></label>
+                <div class="input-field">
                     <select>
                         <option selected disabled value="categoria">Categoria</option>
                         <option value="categoria1">Botas</option>
@@ -369,8 +367,7 @@
                     <label for="pesquisa">Pesquisar</label>
                     <a href="javascript:;"><i class="material-icons">search</i></a>
                 </div>
-                <div class="form-field">
-                    <label></label>
+                <div class="input-field">
                     <select>
                         <option selected disabled value="categoria">Categoria</option>
                         <option value="categoria1">Botas</option>
@@ -535,8 +532,20 @@
     </section>
 
     <script type="text/javascript">
+        //var instance = M.Tabs.init(el, options);
+
         $(document).ready(function () {
             $('.tabs').tabs();
+        });
+    </script>
+
+    <script type="text/javascript">
+        //document.addEventListener('DOMContentLoaded', function () {
+        //    var elems = document.querySelectorAll('select');
+        //    var instances = M.FormSelect.init(elems, options);
+        //});
+        $(document).ready(function () {
+            $('select').formSelect();
         });
     </script>
 </body>

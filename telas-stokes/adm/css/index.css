@@ -240,11 +240,10 @@ header {
     .produtos-habilitar .produto a {
       margin: 0;
       padding: 0;
-      width: 70px;
-      height: 70px; }
+      width: 100%;
+      height: auto; }
       .produtos-habilitar .produto a img {
         width: 100%;
-        height: 100%;
         border-radius: 7px; }
 
 .meus-produtos {

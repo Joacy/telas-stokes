@@ -201,31 +201,7 @@ header.navbar-fixed {
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .abas div#editar .fotos form textarea {
-      height: auto;
-      padding: 10px 5px;
-      border-bottom: 1px solid #9e9e9e;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #545361;
-      font-size: 16px;
-      margin: 10px 0px;
-      font-family: "Proxima Nova"; }
-    .abas div#editar .fotos form .form-field select {
-      display: block;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #9e9e9e;
-      border-radius: 3px;
-      padding: 0px;
-      padding: 0px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #545361;
-      font-size: 16px;
-      font-family: "Proxima Nova"; }
-      .abas div#editar .fotos form .form-field select option {
-        color: #000000;
-        background: #ffffff; }
+      height: auto; }
     .abas div#editar .fotos form p.precos {
       margin-left: 10px;
       font-size: 14px;

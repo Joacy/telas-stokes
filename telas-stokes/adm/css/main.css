@@ -240,11 +240,10 @@ header {
     .produtos-habilitar .produto a {
       margin: 0;
       padding: 0;
-      width: 70px;
-      height: 70px; }
+      width: 100%;
+      height: auto; }
       .produtos-habilitar .produto a img {
         width: 100%;
-        height: 100%;
         border-radius: 7px; }
 
 .meus-produtos {
@@ -432,36 +431,28 @@ header.navbar-fixed {
     .abas div#ativos form .input-field,
     .abas div#ocultos form .input-field {
       position: relative; }
+      .abas div#novos form .input-field input,
+      .abas div#ativos form .input-field input,
+      .abas div#ocultos form .input-field input {
+        margin-bottom: 0;
+        font-size: 14px; }
       .abas div#novos form .input-field a,
       .abas div#ativos form .input-field a,
       .abas div#ocultos form .input-field a {
         position: absolute;
-        bottom: 7px;
+        bottom: 0;
         right: 0;
         cursor: pointer; }
         .abas div#novos form .input-field a i.material-icons,
         .abas div#ativos form .input-field a i.material-icons,
         .abas div#ocultos form .input-field a i.material-icons {
-          color: #9e9e9e;
+          color: #535353;
           font-size: 30px; }
-    .abas div#novos form .form-field select,
-    .abas div#ativos form .form-field select,
-    .abas div#ocultos form .form-field select {
-      display: block;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #9e9e9e;
-      padding: 0px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #9e9e9e;
-      font-size: 16px;
-      font-family: "Proxima Nova"; }
-      .abas div#novos form .form-field select option,
-      .abas div#ativos form .form-field select option,
-      .abas div#ocultos form .form-field select option {
-        color: #000000;
-        background: #ffffff; }
+      .abas div#novos form .input-field .select-wrapper input.select-dropdown,
+      .abas div#ativos form .input-field .select-wrapper input.select-dropdown,
+      .abas div#ocultos form .input-field .select-wrapper input.select-dropdown {
+        color: #9e9e9e;
+        font-size: 14px; }
   .abas div#novos .produtos,
   .abas div#ativos .produtos,
   .abas div#ocultos .produtos {
@@ -772,31 +763,7 @@ header.navbar-fixed {
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .abas div#editar .fotos form textarea {
-      height: auto;
-      padding: 10px 5px;
-      border-bottom: 1px solid #9e9e9e;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #545361;
-      font-size: 16px;
-      margin: 10px 0px;
-      font-family: "Proxima Nova"; }
-    .abas div#editar .fotos form .form-field select {
-      display: block;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #9e9e9e;
-      border-radius: 3px;
-      padding: 0px;
-      padding: 0px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #545361;
-      font-size: 16px;
-      font-family: "Proxima Nova"; }
-      .abas div#editar .fotos form .form-field select option {
-        color: #000000;
-        background: #ffffff; }
+      height: auto; }
     .abas div#editar .fotos form p.precos {
       margin-left: 10px;
       font-size: 14px;
@@ -1918,31 +1885,50 @@ header.navbar-fixed {
     .formulario form .input-field {
       position: relative; }
       .formulario form .input-field input {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-size: 14px; }
       .formulario form .input-field a {
         position: absolute;
         bottom: 0;
         right: 0;
         cursor: pointer; }
         .formulario form .input-field a i.material-icons {
-          color: #9e9e9e;
+          color: #535353;
           font-size: 30px; }
-    .formulario form .form-field select {
-      display: block;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #9e9e9e;
-      padding: 0px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #9e9e9e;
-      margin-top: 14px;
-      margin-bottom: 14px;
-      font-size: 16px;
-      font-family: "Proxima Nova"; }
-      .formulario form .form-field select option {
-        color: #000000;
-        background: #ffffff; }
+      .formulario form .input-field .select-wrapper input.select-dropdown {
+        color: #9e9e9e;
+        font-size: 14px; }
+    .formulario form .pesquisar-data {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .formulario form .pesquisar-data .input-field {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-top: 0;
+        width: 100%; }
+        .formulario form .pesquisar-data .input-field .datepicker {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+        .formulario form .pesquisar-data .input-field ::-webkit-input-placeholder {
+          font-size: 14px;
+          color: #9e9e9e; }
+        .formulario form .pesquisar-data .input-field :-ms-input-placeholder {
+          font-size: 14px;
+          color: #9e9e9e; }
+        .formulario form .pesquisar-data .input-field ::-ms-input-placeholder {
+          font-size: 14px;
+          color: #9e9e9e; }
+        .formulario form .pesquisar-data .input-field ::placeholder {
+          font-size: 14px;
+          color: #9e9e9e; }
+      .formulario form .pesquisar-data .input-field.data-inicial {
+        margin-right: 15px; }
 
 .listagem {
   margin: 0px 18px;

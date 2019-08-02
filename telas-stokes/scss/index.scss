@@ -252,13 +252,24 @@ header {
   background: linear-gradient(to right, rgba(#f9f9f9, 0) 0%, rgba(#f9f9f9, 0.5) 50%, rgba(#f9f9f9, 1) 100%);
 }
 
+.slide:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 115px;
+  background: linear-gradient(to left, rgba(#f9f9f9, 0) 0%, rgba(#f9f9f9, 0.5) 50%, rgba(#f9f9f9, 1) 100%);
+}
+
 .produtos {
   text-align: center;
   padding: 0px 18px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 13px;
-
+  margin-bottom: 30px;
+  
   a {
     text-decoration: none;
 
@@ -275,6 +286,7 @@ header {
 
         img {
           width: 100%;
+          height: auto;
           border-top-left-radius: 4px;
           border-top-right-radius: 4px;
         }

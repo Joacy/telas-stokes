@@ -13,7 +13,7 @@
     <meta name="author" content=" ">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -88,26 +88,22 @@
                 <label for="pesquisa">Pesquisar</label>
                 <a href="javascript:;"><i class="material-icons">search</i></a>
             </div>
-            <div class="form-field">
-                <label></label>
+            <div class="input-field">
                 <select>
-                    <option selected disabled value="categoria">Todas</option>
+                    <option value="" selected disabled>Todas</option>
                     <option value="categoria1">Entregue</option>
                     <option value="categoria2">Em Andamento</option>
                     <option value="categoria3">Cancelado</option>
                     <option value="categoria4">Aguardando Pagamento</option>
                 </select>
             </div>
-            <div class="form-field">
-                <label></label>
-                <select>
-                    <option selected value="janeiro">10/01/2019 a 10/02/2019</option>
-                    <option value="fevereiro">10/02/2019 a 10/03/2019</option>
-                    <option value="marco">10/03/2019 a 10/04/2019</option>
-                    <option value="abril">10/04/2019 a 10/05/2019</option>
-                    <option value="maio">10/06/2019 a 10/06/2019</option>
-                    <option selected value="junho">10/06/2019 a 10/07/2019</option>
-                </select>
+            <div class="pesquisar-data">
+                <div class="input-field data-inicial">
+                    <input type="text" id="data-inicio" name="data-inicio" class="datepicker" placeholder="Data Início">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="data-fim" name="data-fim" class="datepicker" placeholder="Data Final">
+                </div>
             </div>
         </form>
     </div>
@@ -225,6 +221,32 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var datepicker_pt_br = {
+            today: 'Hoje', cancel: 'Cancelar', clear: 'Limpar', done: 'Ok', nextMonth: 'Próximo mês', previousMonth: 'Mês anterior', weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'], weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], weekdays: ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'], monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+        }
+        
+        var options = {
+            container: 'body',
+            showDaysInNextAndPreviousMonths: true,
+            format: 'dd/mm/yyyy',
+            i18n: datepicker_pt_br,
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
+
 </body>
 
 </html>

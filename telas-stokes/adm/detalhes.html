@@ -148,11 +148,10 @@
                 </script>
 
                 <form>
-                    <textarea
-                        rows="5">Os queridinhos voltaram com tudo! #usevoga #vendevoga #conceito #estilomasculino #consultoriadeestilo #saojoao #feiradesantana #bahia</textarea>
+                    <textarea class="materialize-textarea"
+                        rows="4">Os queridinhos voltaram com tudo! #usevoga #vendevoga #conceito #estilomasculino #consultoriadeestilo #saojoao #feiradesantana #bahia</textarea>
 
-                    <div class="form-field">
-                        <label></label>
+                    <div class="input-field">
                         <select>
                             <option selected value="categoria">Óculos e Acessórios</option>
                             <option value="categoria1">Botas</option>
@@ -165,11 +164,11 @@
                     <p class="precos">Preços e Variações</p>
                     <div class="precos-variacoes">
                         <div class="coluna1">
-                            <textarea rows="1">Evoke Bionic Degradé</textarea>
+                            <textarea class="materialize-textarea" rows="1">Evoke Bionic Degradé</textarea>
                             <div class="codigo">
-                                <textarea rows="1">EVK105</textarea>
-                                <textarea rows="1">R$ 10,00</textarea>
-                                <textarea rows="1">10</textarea>
+                                <textarea class="materialize-textarea" rows="1">EVK105</textarea>
+                                <textarea class="materialize-textarea" rows="1">R$ 10,00</textarea>
+                                <textarea class="materialize-textarea" rows="1">10</textarea>
                             </div>
                         </div>
                         <div class="coluna2">
@@ -491,6 +490,16 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel();
+        });
+    </script>
+
+    <script type="text/javascript">
+        //document.addEventListener('DOMContentLoaded', function () {
+        //    var elems = document.querySelectorAll('select');
+        //    var instances = M.FormSelect.init(elems, options);
+        //});
+        $(document).ready(function () {
+            $('select').formSelect();
         });
     </script>
 </body>
