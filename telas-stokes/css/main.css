@@ -598,8 +598,14 @@ header.navbar-fixed {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .selecionar-quantidade .caixa-detalhe .quantidade i {
-        cursor: pointer; }
+      .selecionar-quantidade .caixa-detalhe .quantidade a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-decoration: none;
+        color: #000000; }
+        .selecionar-quantidade .caixa-detalhe .quantidade a i {
+          cursor: pointer; }
       .selecionar-quantidade .caixa-detalhe .quantidade input[type="number"] {
         text-align: center;
         width: 40px;

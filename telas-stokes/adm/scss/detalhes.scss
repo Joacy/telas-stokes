@@ -339,8 +339,13 @@ h5 {
           align-items: center;
           justify-content: space-between;
 
-          i {
-            cursor: pointer;
+          a {
+            display: flex;
+            text-decoration: none;
+            color: #000000;
+            i {
+              cursor: pointer;
+            }
           }
 
           input[type="number"] {
