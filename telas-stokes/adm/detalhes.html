@@ -482,8 +482,9 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.tabs').tabs();
+        document.addEventListener('DOMContentLoaded', function () {
+            var el = document.querySelectorAll('.tabs');
+            var instance = M.Tabs.init(el);
         });
     </script>
 
@@ -494,12 +495,9 @@
     </script>
 
     <script type="text/javascript">
-        //document.addEventListener('DOMContentLoaded', function () {
-        //    var elems = document.querySelectorAll('select');
-        //    var instances = M.FormSelect.init(elems, options);
-        //});
-        $(document).ready(function () {
-            $('select').formSelect();
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
         });
     </script>
 </body>

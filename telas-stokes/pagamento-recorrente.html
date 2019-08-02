@@ -13,7 +13,6 @@
     <meta name="author" content=" ">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -159,12 +158,9 @@ c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.
     </form>
 
     <script type="text/javascript">
-        //document.addEventListener('DOMContentLoaded', function () {
-        //    var elems = document.querySelectorAll('select');
-        //    var instances = M.FormSelect.init(elems, options);
-        //});
-        $(document).ready(function () {
-            $('select').formSelect();
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
         });
     </script>
 </body>
