@@ -54,15 +54,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Proxima Nova";
-  padding-bottom: 56px; }
+  font-family: "Proxima Nova"; }
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -129,6 +129,9 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+body {
+  padding-bottom: 56px; }
 
 form {
   padding: 0px 18px;

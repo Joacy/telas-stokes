@@ -61,7 +61,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -183,7 +184,7 @@ header.navbar-fixed {
 .listagem {
   margin: 0px 18px;
   margin-bottom: 15px; }
-  .listagem .venda {
+  .listagem a.venda {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -195,9 +196,9 @@ header.navbar-fixed {
     justify-content: space-between;
     padding: 15px 0px;
     border-bottom: 1px solid #dfdfe1; }
-    .listagem .venda .informacoes {
+    .listagem a.venda .informacoes {
       margin-right: 10px; }
-      .listagem .venda .informacoes .numero-cliente {
+      .listagem a.venda .informacoes .numero-cliente {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -205,7 +206,7 @@ header.navbar-fixed {
         -ms-flex-align: center;
         align-items: center;
         margin-bottom: 10px; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido {
           padding: 1px 10px;
           border-radius: 3px;
           background: #000000;
@@ -213,50 +214,49 @@ header.navbar-fixed {
           font-size: 16px;
           line-height: normal;
           margin-right: 7px; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.novo {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.novo {
           background: #5a72dc; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.andamento {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.andamento {
           background: #d96d00; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.cancelado {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.cancelado {
           background: #d80100; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.entregue {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.entregue {
           background: #888888; }
-        .listagem .venda .informacoes .numero-cliente p.nome-cliente {
+        .listagem a.venda .informacoes .numero-cliente p.nome-cliente {
           color: #000000;
           font-weight: 700;
           font-size: 16px;
           line-height: normal; }
-      .listagem .venda .informacoes p.data-valor {
+      .listagem a.venda .informacoes p.data-valor {
         color: #545460;
         font-size: 16px;
         line-height: normal; }
-      .listagem .venda .informacoes p.modo-entrega {
+      .listagem a.venda .informacoes p.modo-entrega {
         color: #545460;
         font-size: 14px;
         line-height: normal;
         margin-top: 5px;
         margin-bottom: 5px; }
-      .listagem .venda .informacoes p.pagamento {
+      .listagem a.venda .informacoes p.pagamento {
         color: #545460;
         font-size: 14px;
         line-height: normal; }
-      .listagem .venda .informacoes p.pagamento.entrega {
+      .listagem a.venda .informacoes p.pagamento.entrega {
         color: #d96d00; }
-      .listagem .venda .informacoes p.pagamento.aguardando {
+      .listagem a.venda .informacoes p.pagamento.aguardando {
         color: #d80100; }
-      .listagem .venda .informacoes p.pagamento.confirmado {
+      .listagem a.venda .informacoes p.pagamento.confirmado {
         color: #8db543; }
-    .listagem .venda .icone {
+    .listagem a.venda .icone {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-      .listagem .venda .icone a {
+      display: flex;
+      width: 24px;
+      height: 24px; }
+      .listagem a.venda .icone svg {
         width: 24px;
-        height: 24px; }
-        .listagem .venda .icone a svg {
-          width: 24px;
-          height: 24px;
-          fill: #8db543; }
+        height: 24px;
+        fill: #8db543; }
   .listagem .venda:first-child {
     padding-top: 0px; }
   .listagem .venda:last-child {

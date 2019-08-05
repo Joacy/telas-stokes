@@ -1,33 +1,8 @@
 @import "fonts";
 
-* {
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-}
+@import "cabecalho";
 
-body {
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Proxima Nova";
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-@import "header-geral.scss";
+@import "header-geral";
 
 .formulario {
   margin: 0px 18px;
@@ -91,7 +66,7 @@ h5 {
   margin: 0px 18px;
   margin-bottom: 15px;
 
-  .venda {
+  a.venda {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,16 +141,13 @@ h5 {
     }
     .icone {
       display: flex;
+      width: 24px;
+      height: 24px;
 
-      a {
+      svg {
         width: 24px;
         height: 24px;
-
-        svg {
-          width: 24px;
-          height: 24px;
-          fill: #8db543;
-        }
+        fill: #8db543;
       }
     }
   }

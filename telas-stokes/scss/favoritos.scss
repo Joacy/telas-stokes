@@ -1,0 +1,72 @@
+@import "fonts";
+
+@import "cabecalho";
+
+@import "header-geral";
+
+.lista-favoritos {
+  margin: 30px 18px;
+
+  .favorito {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    a.sobre-o-produto {
+      display: flex;
+      align-items: center;
+
+      .imagem-produto {
+        height: 70px;
+        width: 70px;
+        img {
+          border-radius: 4px;
+          width: 100%;
+        }
+      }
+      .informacoes-produto {
+        margin-left: 15px;
+        p.nome {
+          font-size: 16px;
+          color: #000000;
+        }
+        p.preco {
+          font-size: 14px;
+          color: #555555;
+        }
+      }
+    }
+
+    a.sobre-a-loja {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .imagem-loja {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 5px;
+        img {
+          border-radius: 50%;
+          width: 100%;
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+        }
+      }
+      p.nome-loja {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+  .favorito:first-child {
+    padding-top: 0;
+  }
+  .favorito:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}

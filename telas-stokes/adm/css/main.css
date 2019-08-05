@@ -61,7 +61,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -313,15 +314,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Proxima Nova";
-  padding-bottom: 74px; }
+  font-family: "Proxima Nova"; }
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -385,6 +386,9 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+body {
+  padding-bottom: 74px; }
 
 .abas {
   margin: 0px 18px; }
@@ -616,15 +620,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Proxima Nova";
-  padding-bottom: 56px; }
+  font-family: "Proxima Nova"; }
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -688,6 +692,9 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+body {
+  padding-bottom: 56px; }
 
 .abas ul#tabs-swipe-demo.tabs {
   display: -webkit-box;
@@ -1075,15 +1082,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Proxima Nova";
-  padding-bottom: 56px; }
+  font-family: "Proxima Nova"; }
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -1147,6 +1154,9 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+body {
+  padding-bottom: 56px; }
 
 .formulario {
   margin: 0px 18px;
@@ -1363,15 +1373,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Proxima Nova";
-  padding-bottom: 74px; }
+  font-family: "Proxima Nova"; }
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -1435,6 +1445,9 @@ header.navbar-fixed {
           border-radius: 50%; }
     header.navbar-fixed nav .brand-logo.right {
       right: 18px; }
+
+body {
+  padding-bottom: 74px; }
 
 .cupons {
   margin: 0px 18px;
@@ -1566,7 +1579,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -1635,21 +1649,27 @@ form {
   margin: 0px 18px;
   margin-top: 30px;
   margin-bottom: 15px; }
-  form .form-field {
-    margin-bottom: 10px; }
-    form .form-field label {
-      color: #000000;
-      font-size: 14px; }
-    form .form-field input[type="text"] {
-      padding: 0px 5px;
-      background: #ffffff;
-      border: 1px solid #dfdfe1;
-      border-radius: 3px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #000000;
-      font-size: 16px;
-      font-family: "Proxima Nova"; }
+  form .input-field {
+    font-family: "Proxima Nova";
+    width: 100%; }
+    form .input-field .datepicker {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-top: 10px; }
+    form .input-field ::-webkit-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field :-ms-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field ::-ms-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field ::placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
   form .linha-desconto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1817,7 +1837,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -1939,7 +1960,7 @@ header.navbar-fixed {
 .listagem {
   margin: 0px 18px;
   margin-bottom: 15px; }
-  .listagem .venda {
+  .listagem a.venda {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1951,9 +1972,9 @@ header.navbar-fixed {
     justify-content: space-between;
     padding: 15px 0px;
     border-bottom: 1px solid #dfdfe1; }
-    .listagem .venda .informacoes {
+    .listagem a.venda .informacoes {
       margin-right: 10px; }
-      .listagem .venda .informacoes .numero-cliente {
+      .listagem a.venda .informacoes .numero-cliente {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1961,7 +1982,7 @@ header.navbar-fixed {
         -ms-flex-align: center;
         align-items: center;
         margin-bottom: 10px; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido {
           padding: 1px 10px;
           border-radius: 3px;
           background: #000000;
@@ -1969,50 +1990,49 @@ header.navbar-fixed {
           font-size: 16px;
           line-height: normal;
           margin-right: 7px; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.novo {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.novo {
           background: #5a72dc; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.andamento {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.andamento {
           background: #d96d00; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.cancelado {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.cancelado {
           background: #d80100; }
-        .listagem .venda .informacoes .numero-cliente p.numero-pedido.entregue {
+        .listagem a.venda .informacoes .numero-cliente p.numero-pedido.entregue {
           background: #888888; }
-        .listagem .venda .informacoes .numero-cliente p.nome-cliente {
+        .listagem a.venda .informacoes .numero-cliente p.nome-cliente {
           color: #000000;
           font-weight: 700;
           font-size: 16px;
           line-height: normal; }
-      .listagem .venda .informacoes p.data-valor {
+      .listagem a.venda .informacoes p.data-valor {
         color: #545460;
         font-size: 16px;
         line-height: normal; }
-      .listagem .venda .informacoes p.modo-entrega {
+      .listagem a.venda .informacoes p.modo-entrega {
         color: #545460;
         font-size: 14px;
         line-height: normal;
         margin-top: 5px;
         margin-bottom: 5px; }
-      .listagem .venda .informacoes p.pagamento {
+      .listagem a.venda .informacoes p.pagamento {
         color: #545460;
         font-size: 14px;
         line-height: normal; }
-      .listagem .venda .informacoes p.pagamento.entrega {
+      .listagem a.venda .informacoes p.pagamento.entrega {
         color: #d96d00; }
-      .listagem .venda .informacoes p.pagamento.aguardando {
+      .listagem a.venda .informacoes p.pagamento.aguardando {
         color: #d80100; }
-      .listagem .venda .informacoes p.pagamento.confirmado {
+      .listagem a.venda .informacoes p.pagamento.confirmado {
         color: #8db543; }
-    .listagem .venda .icone {
+    .listagem a.venda .icone {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-      .listagem .venda .icone a {
+      display: flex;
+      width: 24px;
+      height: 24px; }
+      .listagem a.venda .icone svg {
         width: 24px;
-        height: 24px; }
-        .listagem .venda .icone a svg {
-          width: 24px;
-          height: 24px;
-          fill: #8db543; }
+        height: 24px;
+        fill: #8db543; }
   .listagem .venda:first-child {
     padding-top: 0px; }
   .listagem .venda:last-child {
@@ -2081,7 +2101,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -2486,7 +2507,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0; }
 
@@ -2552,10 +2574,8 @@ header.navbar-fixed {
       right: 18px; }
 
 .termos {
-  padding: 0px 18px;
-  margin-top: 50px; }
-  .termos p {
-    font-size: 16px;
-    color: #000000;
-    line-height: 1.3;
-    margin-bottom: 10px; }
+  margin: 50px 18px; }
+  .termos textarea.materialize-textarea {
+    height: 100%;
+    overflow: auto;
+    padding: 10px 0px; }
