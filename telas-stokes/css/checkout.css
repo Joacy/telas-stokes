@@ -246,6 +246,8 @@ body {
     .detalhes-compra .detalhamento-preco .linha-cupom form .input-field {
       position: relative;
       font-family: "Proxima Nova"; }
+      .detalhes-compra .detalhamento-preco .linha-cupom form .input-field input#desconto {
+        margin: 0; }
       .detalhes-compra .detalhamento-preco .linha-cupom form .input-field label {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -268,8 +270,8 @@ body {
         position: absolute;
         width: 30px;
         height: 30px;
-        bottom: 10px;
-        right: 0;
+        bottom: 5px;
+        right: -8px;
         text-decoration: none; }
         .detalhes-compra .detalhamento-preco .linha-cupom form .input-field a i.material-icons {
           font-size: 30px;
