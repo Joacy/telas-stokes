@@ -36,20 +36,6 @@ form {
   margin-top: 30px;
   margin-bottom: 15px;
 
-  .input-field {
-    font-family: "Proxima Nova";
-    width: 100%;
-
-    .datepicker {
-      user-select: none;
-      margin-top: 10px;
-    }
-    ::placeholder {
-      font-size: 14px;
-      color: #9e9e9e;
-    }
-  }
-
   .linha-desconto {
     display: flex;
     width: 100%;
@@ -57,6 +43,7 @@ form {
     .input-field {
       font-family: "Proxima Nova";
       width: 100%;
+      margin: 0;
     }
 
     .linha-radio {
@@ -66,7 +53,7 @@ form {
       label {
         width: 50px;
         height: 40px;
-        margin-bottom: calc(1rem + 8px);
+        margin-bottom: 8px;
 
         input[type="radio"] + span {
           width: 50px;
@@ -110,6 +97,20 @@ form {
           color: #ffffff;
         }
       }
+    }
+  }
+
+  .input-field {
+    font-family: "Proxima Nova";
+    width: 100%;
+
+    .datepicker {
+      user-select: none;
+      margin-top: 0;
+    }
+    ::placeholder {
+      font-size: 14px;
+      color: #9e9e9e;
     }
   }
 }

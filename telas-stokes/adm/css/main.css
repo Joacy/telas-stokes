@@ -1649,27 +1649,6 @@ form {
   margin: 0px 18px;
   margin-top: 30px;
   margin-bottom: 15px; }
-  form .input-field {
-    font-family: "Proxima Nova";
-    width: 100%; }
-    form .input-field .datepicker {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      margin-top: 10px; }
-    form .input-field ::-webkit-input-placeholder {
-      font-size: 14px;
-      color: #9e9e9e; }
-    form .input-field :-ms-input-placeholder {
-      font-size: 14px;
-      color: #9e9e9e; }
-    form .input-field ::-ms-input-placeholder {
-      font-size: 14px;
-      color: #9e9e9e; }
-    form .input-field ::placeholder {
-      font-size: 14px;
-      color: #9e9e9e; }
   form .linha-desconto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1677,7 +1656,8 @@ form {
     width: 100%; }
     form .linha-desconto .input-field {
       font-family: "Proxima Nova";
-      width: 100%; }
+      width: 100%;
+      margin: 0; }
     form .linha-desconto .linha-radio {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1688,7 +1668,7 @@ form {
       form .linha-desconto .linha-radio label {
         width: 50px;
         height: 40px;
-        margin-bottom: calc(1rem + 8px); }
+        margin-bottom: 8px; }
         form .linha-desconto .linha-radio label input[type="radio"] + span {
           width: 50px;
           height: 40px;
@@ -1732,6 +1712,27 @@ form {
         form .linha-desconto .linha-radio label input[for="real"]:checked + span {
           background: #8cb543;
           color: #ffffff; }
+  form .input-field {
+    font-family: "Proxima Nova";
+    width: 100%; }
+    form .input-field .datepicker {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-top: 0; }
+    form .input-field ::-webkit-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field :-ms-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field ::-ms-input-placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
+    form .input-field ::placeholder {
+      font-size: 14px;
+      color: #9e9e9e; }
 
 .botao-cadastrar {
   display: -webkit-box;
