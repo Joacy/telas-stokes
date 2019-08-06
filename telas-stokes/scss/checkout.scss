@@ -60,7 +60,7 @@ body {
   padding: 0px 18px;
   overflow: hidden;
 
-  .entrega {
+  a.entrega {
     .titulo {
       display: flex;
       justify-content: space-between;
@@ -69,25 +69,20 @@ body {
         font-size: 16px;
         color: #000000;
       }
-      a,
-      a:active,
-      a:visited,
-      a:hover {
-        text-decoration: none;
-        i.material-icons {
-          width: 24px;
-          height: 24px;
-          color: #000000;
-        }
-        svg#Capa_1 {
-          padding: 0px;
-          margin: 0px;
-          height: 24px;
-          width: 24px;
 
-          path {
-            color: #000000;
-          }
+      i.material-icons {
+        width: 24px;
+        height: 24px;
+        color: #000000;
+      }
+      svg#Capa_1 {
+        padding: 0px;
+        margin: 0px;
+        height: 24px;
+        width: 24px;
+
+        path {
+          color: #000000;
         }
       }
     }
@@ -96,7 +91,7 @@ body {
       color: #545361;
     }
   }
-  .pagamento {
+  a.pagamento {
     .titulo {
       display: flex;
       justify-content: space-between;
@@ -105,25 +100,20 @@ body {
         font-size: 16px;
         color: #000000;
       }
-      a,
-      a:active,
-      a:visited,
-      a:hover {
-        text-decoration: none;
-        i.material-icons {
-          width: 24px;
-          height: 24px;
-          color: #000000;
-        }
-        svg#Capa_1 {
-          padding: 0px;
-          margin: 0px;
-          height: 24px;
-          width: 24px;
 
-          path {
-            fill: #000000;
-          }
+      i.material-icons {
+        width: 24px;
+        height: 24px;
+        color: #000000;
+      }
+      svg#Capa_1 {
+        padding: 0px;
+        margin: 0px;
+        height: 24px;
+        width: 24px;
+
+        path {
+          fill: #000000;
         }
       }
     }
@@ -191,7 +181,7 @@ body {
     .linha-valor {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       p {
         font-size: 14px;
         color: #545361;

@@ -2788,93 +2788,65 @@ body {
 .detalhes-compra {
   padding: 0px 18px;
   overflow: hidden; }
-  .detalhes-compra .entrega .titulo {
+  .detalhes-compra a.entrega .titulo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .detalhes-compra .entrega .titulo h3 {
+    .detalhes-compra a.entrega .titulo h3 {
       font-size: 16px;
       color: #000000; }
-    .detalhes-compra .entrega .titulo a,
-    .detalhes-compra .entrega .titulo a:active,
-    .detalhes-compra .entrega .titulo a:visited,
-    .detalhes-compra .entrega .titulo a:hover {
-      text-decoration: none; }
-      .detalhes-compra .entrega .titulo a i.material-icons,
-      .detalhes-compra .entrega .titulo a:active i.material-icons,
-      .detalhes-compra .entrega .titulo a:visited i.material-icons,
-      .detalhes-compra .entrega .titulo a:hover i.material-icons {
-        width: 24px;
-        height: 24px;
+    .detalhes-compra a.entrega .titulo i.material-icons {
+      width: 24px;
+      height: 24px;
+      color: #000000; }
+    .detalhes-compra a.entrega .titulo svg#Capa_1 {
+      padding: 0px;
+      margin: 0px;
+      height: 24px;
+      width: 24px; }
+      .detalhes-compra a.entrega .titulo svg#Capa_1 path {
         color: #000000; }
-      .detalhes-compra .entrega .titulo a svg#Capa_1,
-      .detalhes-compra .entrega .titulo a:active svg#Capa_1,
-      .detalhes-compra .entrega .titulo a:visited svg#Capa_1,
-      .detalhes-compra .entrega .titulo a:hover svg#Capa_1 {
-        padding: 0px;
-        margin: 0px;
-        height: 24px;
-        width: 24px; }
-        .detalhes-compra .entrega .titulo a svg#Capa_1 path,
-        .detalhes-compra .entrega .titulo a:active svg#Capa_1 path,
-        .detalhes-compra .entrega .titulo a:visited svg#Capa_1 path,
-        .detalhes-compra .entrega .titulo a:hover svg#Capa_1 path {
-          color: #000000; }
-  .detalhes-compra .entrega p {
+  .detalhes-compra a.entrega p {
     font-size: 14px;
     color: #545361; }
-  .detalhes-compra .pagamento .titulo {
+  .detalhes-compra a.pagamento .titulo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .detalhes-compra .pagamento .titulo h3 {
+    .detalhes-compra a.pagamento .titulo h3 {
       font-size: 16px;
       color: #000000; }
-    .detalhes-compra .pagamento .titulo a,
-    .detalhes-compra .pagamento .titulo a:active,
-    .detalhes-compra .pagamento .titulo a:visited,
-    .detalhes-compra .pagamento .titulo a:hover {
-      text-decoration: none; }
-      .detalhes-compra .pagamento .titulo a i.material-icons,
-      .detalhes-compra .pagamento .titulo a:active i.material-icons,
-      .detalhes-compra .pagamento .titulo a:visited i.material-icons,
-      .detalhes-compra .pagamento .titulo a:hover i.material-icons {
-        width: 24px;
-        height: 24px;
-        color: #000000; }
-      .detalhes-compra .pagamento .titulo a svg#Capa_1,
-      .detalhes-compra .pagamento .titulo a:active svg#Capa_1,
-      .detalhes-compra .pagamento .titulo a:visited svg#Capa_1,
-      .detalhes-compra .pagamento .titulo a:hover svg#Capa_1 {
-        padding: 0px;
-        margin: 0px;
-        height: 24px;
-        width: 24px; }
-        .detalhes-compra .pagamento .titulo a svg#Capa_1 path,
-        .detalhes-compra .pagamento .titulo a:active svg#Capa_1 path,
-        .detalhes-compra .pagamento .titulo a:visited svg#Capa_1 path,
-        .detalhes-compra .pagamento .titulo a:hover svg#Capa_1 path {
-          fill: #000000; }
-  .detalhes-compra .pagamento .cartao {
+    .detalhes-compra a.pagamento .titulo i.material-icons {
+      width: 24px;
+      height: 24px;
+      color: #000000; }
+    .detalhes-compra a.pagamento .titulo svg#Capa_1 {
+      padding: 0px;
+      margin: 0px;
+      height: 24px;
+      width: 24px; }
+      .detalhes-compra a.pagamento .titulo svg#Capa_1 path {
+        fill: #000000; }
+  .detalhes-compra a.pagamento .cartao {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .detalhes-compra .pagamento .cartao img {
+    .detalhes-compra a.pagamento .cartao img {
       height: 30px;
       width: 45px;
       -o-object-fit: contain;
       object-fit: contain;
       margin-right: 10px; }
-    .detalhes-compra .pagamento .cartao p {
+    .detalhes-compra a.pagamento .cartao p {
       font-size: 14px;
       color: #545361; }
   .detalhes-compra .detalhamento-preco .linha-cupom {
@@ -2923,7 +2895,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
     .detalhes-compra .detalhamento-preco .linha-valor p {
       font-size: 14px;
       color: #545361; }
