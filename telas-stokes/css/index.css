@@ -394,3 +394,11 @@ footer {
     color: #000000;
     width: 24px;
     height: 24px; }
+    footer a svg {
+      padding: 0px;
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      fill: #000000; }
