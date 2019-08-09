@@ -107,7 +107,7 @@
         </form>
     </div>
 
-    <div class="listagem">
+    <div id="compras-scroll" class="listagem">
         <a class="compra" href="pedido.html">
             <div class="informacoes">
                 <div class="numero-cliente">
@@ -203,6 +203,30 @@
                 </svg>
             </div>
         </a>
+
+        <a class="compra" href="pedido.html">
+            <div class="informacoes">
+                <div class="numero-cliente">
+                    <p class="numero-pedido entregue">1589</p>
+                    <p class="nome-cliente">Marcos Fabian</p>
+                </div>
+                <p class="data-valor">10/06/2019 - R$ 489,90</p>
+                <p class="modo-entrega">Retirar no local</p>
+                <p class="pagamento entrega">Pagamento na entrega</p>
+            </div>
+            <div class="icone">
+                <svg height="512pt" viewBox="0 0 512.016 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m202.667969 405.339844c-111.746094 0-202.667969-90.921875-202.667969-202.664063 0-111.746093 90.921875-202.6679685 202.667969-202.6679685 111.742187 0 202.664062 90.9218755 202.664062 202.6679685 0 111.742188-90.921875 202.664063-202.664062 202.664063zm0-373.332032c-94.101563 0-170.667969 76.566407-170.667969 170.667969 0 94.101563 76.566406 170.664063 170.667969 170.664063 94.101562 0 170.664062-76.5625 170.664062-170.664063 0-94.101562-76.5625-170.667969-170.664062-170.667969zm0 0" />
+                    <path
+                        d="m496 512.007812c-4.097656 0-8.191406-1.558593-11.308594-4.691406l-161.277344-161.28125c-6.25-6.25-6.25-16.382812 0-22.636718 6.25-6.25 16.382813-6.25 22.632813 0l161.28125 161.28125c6.25 6.25 6.25 16.382812 0 22.636718-3.136719 3.132813-7.230469 4.691406-11.328125 4.691406zm0 0" />
+                    <path
+                        d="m282.667969 218.675781h-160c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h160c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+                    <path
+                        d="m202.667969 298.675781c-8.832031 0-16-7.167969-16-16v-160c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v160c0 8.832031-7.167969 16-16 16zm0 0" />
+                </svg>
+            </div>
+        </a>
     </div>
 
     <script type="text/javascript">
@@ -230,6 +254,47 @@
         });
     </script>
 
+    <script type="text/javascript">
+        var compras;
+
+        var getJSON = function (url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            xhr.onreadystatechange = function () {
+                var status = xhr.status;
+                if (status === 200) {
+                    callback(null, xhr.response);
+                } else {
+                    callback(status, xhr.response);
+                }
+            };
+            xhr.send();
+        };
+
+        getJSON('compras.json', function (err, data) {
+            if (err !== null) {
+                console.log('Ocorreu um erro' + err);
+            } else {
+                console.log(data);
+                compras = data;
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+            var wrap = document.getElementById('compras-scroll');
+            var contentHeight = wrap.offsetHeight;
+            var yOffset = window.pageYOffset;
+            var y = yOffset + window.innerHeight;
+
+            if (y >= contentHeight) {
+                compras.forEach(percorrer);
+                function percorrer(item, index, arr) {
+                    wrap.innerHTML = wrap.innerHTML + "<a class=\"compra\" href=" + item.hrefurl + "><div class=\"informacoes\"><div class=\"numero-cliente\"><p class=\"numero-pedido " + item.statuspedido + "\">" + item.numeropedido + "</p><p class=\"nome-cliente\">" + item.nomecliente + "</p></div><p class=\"data-valor\">" + item.data + " - R$ " + item.valor + "</p><p class=\"modo-entrega\">" + item.modoentrega + "</p><p class=\"pagamento " + item.statuspagamento + "\">" + item.pagamento + "</p></div><div class=\"icone\"><svg height=\"512pt\" viewBox=\"0 0 512.016 512\" width=\"512pt\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m202.667969 405.339844c-111.746094 0-202.667969-90.921875-202.667969-202.664063 0-111.746093 90.921875-202.6679685 202.667969-202.6679685 111.742187 0 202.664062 90.9218755 202.664062 202.6679685 0 111.742188-90.921875 202.664063-202.664062 202.664063zm0-373.332032c-94.101563 0-170.667969 76.566407-170.667969 170.667969 0 94.101563 76.566406 170.664063 170.667969 170.664063 94.101562 0 170.664062-76.5625 170.664062-170.664063 0-94.101562-76.5625-170.667969-170.664062-170.667969zm0 0\" /> <path d=\"m496 512.007812c-4.097656 0-8.191406-1.558593-11.308594-4.691406l-161.277344-161.28125c-6.25-6.25-6.25-16.382812 0-22.636718 6.25-6.25 16.382813-6.25 22.632813 0l161.28125 161.28125c6.25 6.25 6.25 16.382812 0 22.636718-3.136719 3.132813-7.230469 4.691406-11.328125 4.691406zm0 0\" /> <path d=\"m282.667969 218.675781h-160c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h160c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0\" /> <path d=\"m202.667969 298.675781c-8.832031 0-16-7.167969-16-16v-160c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v160c0 8.832031-7.167969 16-16 16zm0 0\" /></svg></div></a>";
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

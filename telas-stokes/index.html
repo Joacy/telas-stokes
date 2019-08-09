@@ -372,7 +372,7 @@
         </div>
     </section>
 
-    <section class="produtos">
+    <section id="produtos-scroll" class="produtos">
         <a href="detalhes.html">
             <div class="caixa-produto">
                 <div class="foto-produto">
@@ -615,6 +615,48 @@
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
         });
+    </script>
+
+    <script type="text/javascript">
+        var dados;
+
+        var getJSON = function (url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            xhr.onreadystatechange = function () {
+                var status = xhr.status;
+                if (status === 200) {
+                    callback(null, xhr.response);
+                } else {
+                    callback(status, xhr.response);
+                }
+            };
+            xhr.send();
+        };
+
+        getJSON('produtos.json', function (err, data) {
+            if (err !== null) {
+                console.log('Ocorreu um erro' + err);
+            } else {
+                console.log(data);
+                dados = data;
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+            var wrap = document.getElementById('produtos-scroll');
+            var contentHeight = wrap.offsetHeight;
+            var yOffset = window.pageYOffset;
+            var y = yOffset + window.innerHeight;
+
+            if (y >= contentHeight) {
+                dados.forEach(percorrer);
+                function percorrer(item, index, arr) {
+                    wrap.innerHTML = wrap.innerHTML + "<a href=" + item.hrefurl + "><div class=\"caixa-produto\"><div class=\"foto-produto\"><img src=" + item.urlimagem + "></div><div class=\"legenda-produto\"><p class=\"preco\">R$ " + item.precoproduto + "</p><p class=\"nome\">" + item.nomeproduto + "</p></div></div></a>";
+                }
+            }
+        })
     </script>
 </body>
 

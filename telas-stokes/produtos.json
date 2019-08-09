@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "hrefurl": "detalhes.html",
+        "urlimagem": "imagens/sapatenis.jpg",
+        "precoproduto": "R$ 229,00",
+        "nomeproduto": "Sapatênis"
+    },
+    {
+        "id": 2,
+        "hrefurl": "detalhes.html",
+        "urlimagem": "imagens/botas.jpg",
+        "precoproduto": "R$ 229,00",
+        "nomeproduto": "Bota"
+    },
+    {
+        "id": 3,
+        "hrefurl": "detalhes.html",
+        "urlimagem": "imagens/bermuda.jpg",
+        "precoproduto": "R$ 229,00",
+        "nomeproduto": "Bermuda"
+    },
+    {
+        "id": 4,
+        "hrefurl": "detalhes.html",
+        "urlimagem": "imagens/blazer.jpg",
+        "precoproduto": "R$ 229,00",
+        "nomeproduto": "Blazer"
+    }
+]
