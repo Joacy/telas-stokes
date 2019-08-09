@@ -22,5 +22,29 @@
         "modoentrega": "Retirar no local",
         "statuspagamento": "aguardando",
         "pagamento": "Aguardando pagamento"
+    },
+    {
+        "id": 3,
+        "hrefurl": "pedido.html",
+        "numeropedido": "1588",
+        "statuspedido": "cancelado",
+        "nomecliente": "Marcos Fabian",
+        "data": "10/06/2019",
+        "valor": "489,90",
+        "modoentrega": "Retirar no Local",
+        "statuspagamento": "entrega",
+        "pagamento": "Pagamento na entrega"
+    },
+    {
+        "id": 4,
+        "hrefurl": "pedido.html",
+        "numeropedido": "1589",
+        "statuspedido": "entregue",
+        "nomecliente": "Marcos Fabian",
+        "data": "10/06/2019",
+        "valor": "489,90",
+        "modoentrega": "Retirar no local",
+        "statuspagamento": "entrega",
+        "pagamento": "Pagamento na entrega"
     }
 ]
