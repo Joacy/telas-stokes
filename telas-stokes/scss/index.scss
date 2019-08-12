@@ -294,6 +294,30 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .produtos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .produtos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .produtos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .produtos {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -311,7 +335,7 @@ footer {
     color: #000000;
     width: 24px;
     height: 24px;
-    
+
     svg {
       padding: 0px;
       margin: 0px;
