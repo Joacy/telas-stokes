@@ -31,7 +31,7 @@
 
     .input-field {
       position: relative;
-      
+
       a {
         position: absolute;
         bottom: 10px;
@@ -79,6 +79,42 @@
 
     a {
       text-decoration: none;
+    }
+  }
+
+  a.login-unico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    padding: 0px 18px;
+    box-sizing: border-box;
+
+    .imagem {
+      display: flex;
+      align-items: center;
+      img {
+        width: 70px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    .texto {
+      margin-left: 15px;
+      p {
+        text-align: left;
+        color: #9e9e9e;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+
+      p.titulo{
+        color: #000000;
+      }
     }
   }
 }

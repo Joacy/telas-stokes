@@ -5,7 +5,7 @@
 @import "header-geral";
 
 body {
-  padding-bottom: 56px;
+  padding-bottom: 112px;
 }
 
 form {
@@ -67,6 +67,36 @@ form {
         text-align: left;
         color: #000000;
       }
+    }
+  }
+
+  .continuar-comprando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 100vw;
+    position: fixed;
+    bottom: 56px;
+    left: 0;
+    padding: 5px;
+    padding-top: 0;
+    background: transparent;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 100%;
+      font-size: 20px;
+      text-transform: uppercase;
+      background: #5a72dc;
+      color: #ffffff;
+      border-radius: 3px;
+      appearance: none;
+      font-family: "Proxima Nova";
+      box-sizing: border-box;
     }
   }
 

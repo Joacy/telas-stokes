@@ -131,7 +131,7 @@ header.navbar-fixed {
       right: 18px; }
 
 body {
-  padding-bottom: 56px; }
+  padding-bottom: 112px; }
 
 form {
   padding: 0px 18px;
@@ -190,6 +190,47 @@ form {
         width: 60px;
         text-align: left;
         color: #000000; }
+  form .continuar-comprando {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 56px;
+    width: 100vw;
+    position: fixed;
+    bottom: 56px;
+    left: 0;
+    padding: 5px;
+    padding-top: 0;
+    background: transparent; }
+    form .continuar-comprando a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 50px;
+      width: 100%;
+      font-size: 20px;
+      text-transform: uppercase;
+      background: #5a72dc;
+      color: #ffffff;
+      border-radius: 3px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-family: "Proxima Nova";
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
   form .botao-continuar {
     display: -webkit-box;
     display: -ms-flexbox;

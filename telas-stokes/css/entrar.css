@@ -219,6 +219,44 @@ header.navbar-fixed {
       font-size: 16px; }
     .login .login-links a {
       text-decoration: none; }
+  .login a.login-unico {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    padding: 0px 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .login a.login-unico .imagem {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .login a.login-unico .imagem img {
+        width: 70px;
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .login a.login-unico .texto {
+      margin-left: 15px; }
+      .login a.login-unico .texto p {
+        text-align: left;
+        color: #9e9e9e;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4; }
+      .login a.login-unico .texto p.titulo {
+        color: #000000; }
 
 svg#Layer_1 {
   fill: url(#MyGradient);
