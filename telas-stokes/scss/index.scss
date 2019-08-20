@@ -507,6 +507,74 @@ body {
   }
 }
 
+.produtos-desktop {
+  text-align: center;
+  padding: 20px 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+
+    .caixa-produto {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.06);
+
+      .foto-produto {
+        display: flex;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+
+      .legenda-produto {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin: 15px 15px;
+
+        .icone {
+          display: flex;
+          margin: 0;
+          padding: 0;
+
+          i {
+            font-size: 28px;
+            color: #8db543;
+          }
+        }
+
+        .preco {
+          font-size: 16px;
+          color: #000000;
+          text-align: left;
+          margin-bottom: 5px;
+          line-height: 1.3;
+        }
+
+        .nome {
+          line-height: 1.3;
+          color: #696969;
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .produtos {
     grid-template-columns: repeat(3, 1fr);
@@ -717,16 +785,8 @@ body {
   #footer-stokes {
     display: none;
   }
-  .produtos {
-    a {
-      .caixa-produto {
-        .legenda-produto {
-          .icone {
-            display: none;
-          }
-        }
-      }
-    }
+  .produtos-desktop {
+    display: none;
   }
 }
 
@@ -755,58 +815,7 @@ body {
   }
 
   .produtos {
-    text-align: center;
-    padding: 20px 90px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
-    margin-bottom: 30px;
-
-    a {
-      .caixa-produto {
-        border-radius: 8px;
-
-        .foto-produto {
-          img {
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-          }
-        }
-
-        .legenda-produto {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border-bottom-left-radius: 8px;
-          border-bottom-right-radius: 8px;
-          margin: 15px 15px;
-
-          .icone {
-            display: flex;
-            margin: 0;
-            padding: 0;
-
-            i {
-              font-size: 28px;
-              color: #8db543;
-            }
-          }
-
-          .preco {
-            font-size: 16px;
-            color: #000000;
-            text-align: left;
-            margin-bottom: 5px;
-          }
-
-          .nome {
-            color: #696969;
-            font-size: 14px;
-            text-align: left;
-          }
-        }
-      }
-    }
+    display: none;
   }
 }
 
@@ -821,3 +830,168 @@ body {
 //     grid-template-columns: repeat(6, 1fr);
 //   }
 // }
+
+#modal1 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 75%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 200px;
+
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    a.modal-close {
+      padding: 0;
+      margin: 0;
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .modal-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+
+    .coluna1 {
+      width: 60%;
+      margin-right: 15px;
+
+      .fotos {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .miniaturas {
+        width: 100%;
+        margin-top: 5px;
+
+        img {
+          width: 80px;
+          height: auto;
+          object-fit: contain;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .coluna2 {
+      width: 40%;
+      .informacoes-produto {
+        margin-bottom: 20px;
+        h4 {
+          font-size: 16px;
+          color: #000000;
+          line-height: 1.4;
+        }
+        p {
+          font-size: 16px;
+          color: #000000;
+          line-height: 1.4;
+        }
+      }
+
+      .caixa-detalhe {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        .tipo-produto {
+          .nome {
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.3;
+          }
+          .preco {
+            color: #545361;
+            font-size: 16px;
+            line-height: 1.3;
+          }
+        }
+
+        .quantidade {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          a {
+            display: flex;
+            text-decoration: none;
+            color: #000000;
+            i {
+              cursor: pointer;
+            }
+          }
+
+          input[type="number"] {
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            margin: 0px 10px;
+            background: transparent;
+            color: #000000;
+            font-size: 20px;
+            border-bottom: 1px solid #9e9e9e;
+            font-family: "Proxima Nova";
+          }
+        }
+
+        border-bottom: 1px solid rgba(#000000, 0.1);
+      }
+
+      .botao-comprar {
+        padding: 20px 0px;
+        width: 100%;
+        background: transparent;
+
+        a {
+          background: #8db543;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          height: 50px;
+          font-size: 20px;
+
+          i.material-icons {
+            margin-left: 5px;
+            font-size: 28px;
+          }
+        }
+      }
+
+      .add-favoritos {
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 16px;
+          color: #ca1f27;
+          cursor: pointer;
+        }
+
+        p {
+          margin-left: 5px;
+          font-size: 12px;
+          color: #7b7b87;
+        }
+      }
+    }
+  }
+}
